@@ -32,8 +32,8 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 | Type                            | Links                               |
 | ------------------------------- | --------------------------------------- |
 | 📚 **Documentation & Wiki**              | [Read Our Wiki](https://github.com/unslothai/unsloth/wiki) |
-| 🥇 **Benchmarking**                   | [Performance Tables](https://github.com/unslothai/unsloth/tree/main#-performance-benchmarking)|
-| 🌐 **Released Models**            | [Unsloth Releases](https://huggingface.co/unsloth)|
+| 🥇 **Benchmarking**                   | [Details](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/Benchmark)|
+| 🌐 **Evaluation**            | [Reports](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports)|
 
 ![](https://i.ibb.co/sJ7RhGG/image-41.png)
 
