@@ -15,7 +15,7 @@
 
 All notebooks are **beginner friendly**! Add your smart contract dataset, click "Run All", and you'll get a auditing report. Use can use our colab scripts or your local devices.
 
-| Unsloth supports | Free Notebooks | Model source | 
+| Model List | Free Notebooks | Model Source | 
 |-----------|---------|--------|
 | **FTAudit-Llama3 (8B)**      | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
 | **FTAudit-Mistral (7B)**    | [▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
