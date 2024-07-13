@@ -1,7 +1,7 @@
 <div align="center">
 
   <a href="https://huggingface.co/weifar"><picture>
-    <img src="./images/log_FTAudit.png" height=100>
+    <img src="./images/log_FTAudit.png" height=150>
       </picture></a>
 
 
