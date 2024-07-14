@@ -32,7 +32,7 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 
 ## 🦙 FTAudit.ai News
 - 🍀 NEW! [Gemma-2-9b](https://colab.research.google.com/drive/1vIrqH5uYDQwsJ4-OO3DErvuv4pBgVwk4?usp=sharing) and Gemma-2-27b now supported
-- 🐥 UPDATE! [FT-Audit-Codegemma](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing) model updated
+- 🐥 UPDATE! [FTAudit-Codegemma](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing) model updated
 
 
 
@@ -46,5 +46,5 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 ![](https://i.ibb.co/sJ7RhGG/image-41.png)
 
 ### Thank You to
-- [Unsloth AI](https://unsloth.ai) for providing [Faster Interface Plan](https://github.com/unslothai/unsloth), accelerate our evaluation.
+- [Unsloth AI](https://unsloth.ai) for providing Faster Interface Plan, accelerate our evaluations.
 
