@@ -31,7 +31,7 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 |FTAudit-Llama2 (7B)|[⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-7b)|
 
 ## 🦙 FTAudit.ai News
-- 🍀 NEW! [Gemma-2-9b](https://colab.research.google.com/drive/1vIrqH5uYDQwsJ4-OO3DErvuv4pBgVwk4?usp=sharing) and Gemma-2-27b now supported
+- 🍀 NEW! [FTAudit-Gemma-2-9b](https://huggingface.co/weifar/FTAudit-gemma2-9b-mix-v0.1) now supported
 - 🐥 UPDATE! [FTAudit-Codegemma](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing) model updated
 
 
@@ -45,9 +45,9 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 
 
 ## Training Details
-<a><picture><img src="./images/Training_loss_fix.png" height="150"></picture></a> <a><picture><img src="./images/TrainingLoss_fix.png" height="150"></picture></a>
+<a><picture><img src="./images/Training_loss_fix.png" height="200"></picture></a> <a><picture><img src="./images/TrainingLoss_fix.png" height="200"></picture></a>
 
-<a><picture><img src="./images/GPU_memory.png" height="150"></picture></a> <a><picture><img src="./images/GPI_power.png" height="150"></picture></a>
+<a><picture><img src="./images/GPU_memory.png" height="200"></picture></a> <a><picture><img src="./images/GPI_power.png" height="200"></picture></a>
 
 ![](https://i.ibb.co/sJ7RhGG/image-41.png)
 
