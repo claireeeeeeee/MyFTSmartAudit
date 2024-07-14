@@ -13,7 +13,7 @@
 
 ## 🕌 FTAudit Framework 
   <a><picture>
-    <img src="./images/FTAduit.png" height=180>
+    <img src="./images/FTAduit.png" height=250>
       </picture></a>
 
 ## ✨ Run Specialized Models
