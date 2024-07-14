@@ -17,10 +17,18 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 
 | Model List | Free Notebooks | Model Source | 
 |-----------|---------|--------|
-| **FTAudit-Llama3 (8B)**      | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
-| **FTAudit-Mistral (7B)**    | [▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
-| **FTAudit-Gemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
-| **FTAudit-Codegemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[Download](https://huggingface.co/weifar/FTAudit-CodeGemma-7b-v0.4) | 
+| **FTAudit-Llama3 (8B)**      | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
+| **FTAudit-Mistral (7B)**    | [▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
+| **FTAudit-Gemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
+| **FTAudit-Codegemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-CodeGemma-7b-v0.4) | 
+
+### In our early research, we also fine-tune other models:
+
+| Model List | Model Source |  
+|-----------|---------|
+| FTAudit-Codellama-v0.2 (13B) | [⬇Download](https://huggingface.co/weifar/FTAudit-Codellama-13b) |
+|FTAudit-Codellama (7B)|[⬇Download](https://huggingface.co/weifar/FTAudit-Codellama-7b)|
+|FTAudit-Llama2 (7B)|[⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-7b)|
 
 ## 🦙 FTAudit.ai News
 - 🍀 NEW! [Gemma-2-9b](https://colab.research.google.com/drive/1vIrqH5uYDQwsJ4-OO3DErvuv4pBgVwk4?usp=sharing) and Gemma-2-27b now supported
