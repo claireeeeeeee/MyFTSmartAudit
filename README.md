@@ -43,6 +43,12 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 | 🥇 **Benchmarking**                   | [Details](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/Benchmark)|
 | 🌐 **Evaluation**            | [Reports](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports)|
 
+
+## Training Details
+<a><picture><img src="./images/Training_loss_fix.png" height="150"></picture></a> <a><picture><img src="./images/TrainingLoss_fix.png" height="150"></picture></a>
+
+<a><picture><img src="./images/GPU_memory.png" height="150"></picture></a> <a><picture><img src="./images/GPI_power.png" height="150"></picture></a>
+
 ![](https://i.ibb.co/sJ7RhGG/image-41.png)
 
 ### Thank You to
