@@ -11,6 +11,11 @@
 
 </div>
 
+## 🕌 FTAudit Framework 
+  <a><picture>
+    <img src="./images/FTaudit-frame.jpeg" height=200>
+      </picture></a>
+
 ## ✨ Run Specialized Models
 
 All notebooks are **beginner friendly**! Add your smart contract dataset, click "Run All", and you'll get a auditing report. Use can use our colab scripts or your local devices.
