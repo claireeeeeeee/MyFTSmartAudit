@@ -5,7 +5,7 @@
       </picture></a>
 
 
-### Specialized Models for Smart Contract Auditing!
+# Specialized Models for Smart Contract Auditing!
 
 ![](https://i.ibb.co/sJ7RhGG/image-41.png)
 
@@ -13,13 +13,16 @@
 
 ## 🕌 FTAudit Ecosystem 
 <div align="center">
-  <a><picture>
-    <img src="./images/FTAudit.png" height=250>
-      </picture></a>
+  <img src="./images/FTAudit.png" alt="FTAudit Ecosystem" height="250">
 </div>
 
-Our Ecosystem aims to provide a comprehensive solution for smart contract auditing. It includes a set of specialized models, a user-friendly interface, and a powerful backend to support the entire auditing process. 
-By leveraging the power of these specialized models, our Ecosystem can help users quickly and accurately identify potential vulnerabilities in their smart contracts, providing them with valuable insights and recommendations for improvement.
+Our Ecosystem aims to provide a comprehensive solution for smart contract auditing. It includes:
+
+- A set of specialized models
+- A user-friendly interface
+- A powerful backend to support the entire auditing process
+
+By leveraging these specialized models, our Ecosystem helps users quickly and accurately identify potential vulnerabilities in their smart contracts, providing valuable insights and recommendations for improvement.
 
 ## ✨ Run Specialized Models
 
@@ -63,13 +66,18 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 | 🌐 **Evaluation**            | [Reports](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports)|
 
 
-## Training Details
-<a><picture><img src="./images/Training_loss_fix.png" height="200"></picture></a> <a><picture><img src="./images/TrainingLoss_fix.png" height="200"></picture></a>
+<div align="center">
+  <img src="./images/Training_loss_fix.png" alt="Training Loss" height="200">
+  <img src="./images/TrainingLoss_fix.png" alt="Training Loss Graph" height="200">
+</div>
 
-<a><picture><img src="./images/GPU_memory.png" height="200"></picture></a> <a><picture><img src="./images/GPI_power.png" height="200"></picture></a>
+<div align="center">
+  <img src="./images/GPU_memory.png" alt="GPU Memory Usage" height="200">
+  <img src="./images/GPI_power.png" alt="GPU Power Consumption" height="200">
+</div>
 
 ![](https://i.ibb.co/sJ7RhGG/image-41.png)
 
 ### Thank You to
-- [Unsloth AI](https://unsloth.ai) for providing Faster Interface Plan, accelerate our evaluations.
+- [Unsloth AI](https://unsloth.ai) for providing the Faster Interface Plan, accelerating our evaluations.
 
