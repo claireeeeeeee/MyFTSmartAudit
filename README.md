@@ -14,7 +14,7 @@
 ## 🕌 FTAudit Ecosystem 
 <div align="center">
   <a><picture>
-    <img src="./images/FTAudit.png" height=180>
+    <img src="./images/FTAudit.png" height=250>
       </picture></a>
 </div>
 
