@@ -16,7 +16,7 @@
 
 ### 1. Detectable Dataset
 <div align="center">
-  <img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Randomness predictable','Reentrancy','Unchecked low-level calls','Others','Denial-of-Service','Front-running','Access control','Arithmetic','Time manipulation'],datasets:[{data:[15,31,72,4,6,5,21,22,6]}]},options:{plugins:{legend:{position:'bottom',labels:{boxWidth:12}}}}}" width="500" alt="Detectable Dataset Distribution">
+  <img src="https://quickchart.io/chart?c={type:'pie',data:{labels:['Randomness predictable','Reentrancy','Unchecked low-level calls','Others','Denial-of-Service','Front-running','Access control','Arithmetic','Time manipulation'],datasets:[{data:[15,31,72,4,6,5,21,22,6]}]},options:{plugins:{legend:{position:'bottom',labels:{boxWidth:12}}}}}" width="300" alt="Detectable Dataset Distribution">
 </div>
 
 |ID| Vulnerability Type                            |  Count                               |
