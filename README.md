@@ -32,6 +32,15 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 | **FTAudit-Gemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
 | **FTAudit-Codegemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-CodeGemma-7b-v0.4) | 
 
+### We also fine-tuning other kinds of models for smart contract auditing.
+| Model List | Model Source |  
+|-----------|---------|
+| **FTAudit-Vuln-Llama3 (8B)**   | [⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Llama3-8b-v0.3) |
+|**FTAudit-Vuln-Mistral (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Mistral-7B-v0.3)|
+|**FTAudit-Vuln-Gemma (7B)**|[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Gemma-7B-v0.3)|
+|**FTAudit-Codegemma (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Codegemma-7b)|
+
+
 ### In our early research, we also fine-tune other models:
 
 | Model List | Model Source |  
