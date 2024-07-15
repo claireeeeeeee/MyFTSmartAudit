@@ -11,10 +11,15 @@
 
 </div>
 
-## 🕌 FTAudit Framework 
+## 🕌 FTAudit Ecosystem 
+<div align="center">
   <a><picture>
-    <img src="./images/FTAduit.png" height=180>
+    <img src="./images/FTAudit.png" height=180>
       </picture></a>
+</div>
+
+Our Ecosystem aims to provide a comprehensive solution for smart contract auditing. It includes a set of specialized models, a user-friendly interface, and a powerful backend to support the entire auditing process. 
+By leveraging the power of these specialized models, our Ecosystem can help users quickly and accurately identify potential vulnerabilities in their smart contracts, providing them with valuable insights and recommendations for improvement.
 
 ## ✨ Run Specialized Models
 
