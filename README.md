@@ -64,6 +64,7 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 | 📚 **Documentation & Wiki**              | [Read Our Wiki](https://github.com/LLMSmartAudit/FTSmartAudit/wiki) |
 | 🥇 **Benchmarking**                   | [Details](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/Benchmark)|
 | 🌐 **Evaluation**            | [Reports](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports)|
+| 🚀 **Newly Discovered Vulnerabilities**|[Description](#-newly-discovered-vulnerabilities)|
 
 
 ## 🐞 Vulnerability Categories
