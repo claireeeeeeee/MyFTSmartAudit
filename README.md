@@ -74,7 +74,7 @@ Smart contract vulnerabilities can be divided into two categories: machine-audit
 These vulnerabilities can be identified by conventional automated tools.
 
 <details>
-<summary><strong>Click to expand the full list of Undetectable Vulnerabilities</strong></summary>
+<summary><strong>Click to expand the table of Detectable Vulnerabilities</strong></summary>
 <div align="center">
 
 | Vulnerability Type | Description |
