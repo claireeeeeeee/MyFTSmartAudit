@@ -64,7 +64,6 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 | 📚 **Documentation & Wiki**              | [Read Our Wiki](https://github.com/LLMSmartAudit/FTSmartAudit/wiki) |
 | 🥇 **Benchmarking**                   | [Details](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/Benchmark)|
 | 🌐 **Evaluation**            | [Reports](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports)|
-| 🚀 **Newly Discovered Vulnerabilities**|[Description](#-newly-discovered-vulnerabilities)|
 
 
 ## 🐞 Vulnerability Categories
@@ -206,7 +205,7 @@ These vulnerabilities require human auditors for detection due to their complexi
 
 </details>
 
-## 🆕Newly Discovered Vulnerabilities:
+## Newly Discovered Vulnerabilities:
 Our models have successfully identified **13 vulnerabilities** across **4 different types** that were not detected in the audit reports from Code4rena.
 
 <details>
