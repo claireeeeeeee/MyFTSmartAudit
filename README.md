@@ -73,7 +73,7 @@ Smart contract vulnerabilities can be divided into two categories: machine-audit
 
 These vulnerabilities can be identified by conventional automated tools.
 
-<details>
+<!-- <details> -->
 <summary><strong>Click to expand the table of Detectable Vulnerabilities</strong></summary>
 <div align="center">
 
@@ -91,13 +91,13 @@ These vulnerabilities can be identified by conventional automated tools.
 | Short Address | Exploiting EVM padding behavior in function parameters |
 
 </div>
-</details>
+<!-- </details> -->
 
 ### 🕵️ Undetectable Vulnerabilities
 
 These vulnerabilities require human auditors for detection due to their complexity or context-dependent nature.
 
-<details>
+<!-- <details> -->
 <summary><strong>Click to expand the full list of Undetectable Vulnerabilities</strong></summary>
 
 1. Price Manipulation
@@ -203,12 +203,12 @@ These vulnerabilities require human auditors for detection due to their complexi
 101. Lack of Pull Payment Implementation
 102. Incorrect use of fallback functions
 
-</details>
+<!-- </details> -->
 
 ## Newly Discovered Vulnerabilities:
 Our models have successfully identified **13 vulnerabilities** across **4 different types** that were not detected in the audit reports from Code4rena.
 
-<details>
+<!-- <details> -->
 <summary><h4>📜 Full List of Undetected Vulnerabilities</h4></summary>
 
 - **Potential Token Lockup**:
@@ -307,7 +307,7 @@ Unprotected `setParams()` Function: The `setParams()` function of USDV.sol contr
 
   Unprotected `migrate` function: The `migrate` function of MapleLoan.sol, allows the factory contract to migrate the contract to a new implementation. However, there are no restrictions on the `migrator_` address or the `arguments_` passed to the function. This could lead to unauthorized migration or loss of funds if not properly implemented.
 
-</details>
+<!-- </details> -->
 
 ## 🏋🏿Training Details
 
