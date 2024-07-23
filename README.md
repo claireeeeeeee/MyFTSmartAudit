@@ -108,7 +108,7 @@ These vulnerabilities require human auditors for detection due to their complexi
 6. Misuse of `msg.value` within a loop
 7. Incorrect Allowance Update Logic
 8. Data Corruption
-9. Locked Ether
+9. Lack of Withdrawal Function
 10. Missing Authorization Checks
 11. Storage Error
 12. Hash Collision

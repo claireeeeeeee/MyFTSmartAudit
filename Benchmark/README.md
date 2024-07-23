@@ -43,7 +43,7 @@
 |2|Undetectable| 248|
 | | **Total** | **376** |
 
-### 3. Contest Dataset
+### 3. Real-World Dataset
 
 This dataset incorporates actual contracts deployed on the Ethereum blockchain, ensuring that our evaluations reflect real-world usage patterns and providing a realistic and in-depth assessment of the model's performance.
 
