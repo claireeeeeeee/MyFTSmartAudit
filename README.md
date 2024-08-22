@@ -41,7 +41,7 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 | **FTAudit-Vuln-Llama3 (8B)**   | [⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Llama3-8b-v0.3) |
 |**FTAudit-Vuln-Mistral (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Mistral-7B-v0.3)|
 |**FTAudit-Vuln-Gemma (7B)**|[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Gemma-7B-v0.3)|
-|**FTAudit-Codegemma (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Codegemma-7b)|
+|**FTAudit-Vuln-Codegemma (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Codegemma-7b)|
 
 
 ### In our early research, we also fine-tune other models:
