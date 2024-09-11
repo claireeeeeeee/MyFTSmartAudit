@@ -53,7 +53,11 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 |FTAudit-Llama2 (7B)|[⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-7b)|
 
 ## 🦙 FTAudit.ai News
-- 🍀 NEW! [FTAudit-Gemma-2-9b](https://huggingface.co/weifar/FTAudit-gemma2-9b-mix-v0.1) now supported
+- 🍀 NEW! [FTAudit_qwen2_7b](https://huggingface.co/weifar/FTAudit_qwen2_7b_v1) now supported, which fine-tune qwen2 7b model
+- 🍀 NEW! [FTAudit_phi_3.5_mini](https://huggingface.co/weifar/FTAudit_phi_3_5_mini_v1) now supported, which fine-tune phi 3.5 mini model
+- 🍀 NEW! [FTAudit_mistral_nemo_2407](https://huggingface.co/weifar/FTAudit_mistral_nemo_2407_it_v1) now supported, which fine-tune mistral_nemo_2407
+- 🍀 NEW! [FTAudit-llama3.1-8b](https://huggingface.co/weifar/FTAudit_llama3_1-8b_v1) now supported, which fine-tune llama3.1-8b
+- 🍀 NEW! [FTAudit-Gemma-2-9b](https://huggingface.co/weifar/FTAudit-gemma2-9b-mix-v0.1) now supported, which fine-tune gemma2-9b
 - 🐥 UPDATE! [FTAudit-Codegemma](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing) model updated
 
 
