@@ -28,15 +28,15 @@ By leveraging these specialized models, our Ecosystem helps users quickly and ac
 
 All notebooks are **beginner friendly**! Add your smart contract dataset, click "Run All", and you'll get a auditing report. Use can use our colab scripts or your local devices.
 
-| Model List | Free Notebooks | Model Source | 
-|-----------|---------|--------|
-|** HKT-Llama-3.1 (8b)**|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.1) |
-|** HKT-Gemma-2 (9b)** |-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.1)|
-|** HKT-Mistral-Nemo (12b)**|-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.1)|
-| **FTAudit-Llama3 (8B)**      | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
-| **FTAudit-Mistral (7B)**    | [▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
-| **FTAudit-Gemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
-| **FTAudit-Codegemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-CodeGemma-7b-v0.4) | 
+| Model List | Base Model |Free Notebooks | Model Source | 
+|-----------|---------|---------|--------|
+|**HKT-Llama-3.1 (8b)**| Meta-Llama-3.1-8B-Instruct-bnb-4bit|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.1) |
+|**HKT-Gemma-2 (9b)** | gemma-2-9b-bnb-4bit|-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.1)|
+|**HKT-Mistral-Nemo (12b)**| Mistral-Nemo-Instruct-2407-bnb-4bit |-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.1)|
+| **FTAudit-Llama3 (8B)**      | Meta-Llama-3-8B-Instruct-bnb-4bit | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
+| **FTAudit-Mistral (7B)**    | mistral-7b-instruct-v0.3-bnb-4bit |[▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
+| **FTAudit-Gemma (7B)**      | gemma-1.1-7b-it-bnb-4bit |[▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
+| **FTAudit-Codegemma (7B)**     | codegemma-1.1-7b-it-bnb-4bit | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-CodeGemma-7b-v0.4) | 
 
 
 
