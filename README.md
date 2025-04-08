@@ -1,7 +1,7 @@
 <div align="center">
 
   <a href="https://huggingface.co/weifar"><picture>
-    <img src="./images/log_FTAudit.png" height=150>
+    <img src="./images/logo_smartaudit.jpeg" height=150>
       </picture></a>
 
 
@@ -9,6 +9,12 @@
 
 ![](https://i.ibb.co/sJ7RhGG/image-41.png)
 
+</div>
+
+## Core Idea: Teacher-Student Distiallation
+
+<div align="center">
+  <img src="./images/teacherStudentModel.png" alt="FTAudit Ecosystem" height="250">
 </div>
 
 ## 🕌 HKT-SmartAudit Ecosystem 
