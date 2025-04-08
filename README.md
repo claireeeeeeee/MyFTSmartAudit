@@ -11,7 +11,7 @@
 
 </div>
 
-## Core Idea: Teacher-Student Distiallation
+## Core Idea: Teacher-Student Distillation
 
 <div align="center">
   <img src="./images/distillation.png" alt="teacherStudent Methodology" height="250">
