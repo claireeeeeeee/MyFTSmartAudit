@@ -30,18 +30,14 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 
 | Model List | Free Notebooks | Model Source | 
 |-----------|---------|--------|
+|** HKT-Llama-3.1 (8b)**|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.1) |
+|** HKT-Gemma-2 (9b)** |-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.1)|
+|** HKT-Mistral-Nemo (12b)**|-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.1)|
 | **FTAudit-Llama3 (8B)**      | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
 | **FTAudit-Mistral (7B)**    | [▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
 | **FTAudit-Gemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
 | **FTAudit-Codegemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-CodeGemma-7b-v0.4) | 
 
-### We also fine-tuning other kinds of models for smart contract auditing.
-| Model List | Model Source |  
-|-----------|---------|
-| **FTAudit-Vuln-Llama3 (8B)**   | [⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Llama3-8b-v0.3) |
-|**FTAudit-Vuln-Mistral (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Mistral-7B-v0.3)|
-|**FTAudit-Vuln-Gemma (7B)**|[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Gemma-7B-v0.3)|
-|**FTAudit-Vuln-Codegemma (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Codegemma-7b)|
 
 
 ### In our early research, we also fine-tune other models:
