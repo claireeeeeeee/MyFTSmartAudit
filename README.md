@@ -5,13 +5,13 @@
       </picture></a>
 
 
-# Specialized Models for Smart Contract Auditing!
+# Distilling Lightweight Specialized Models for Smart Contract Auditing!
 
 ![](https://i.ibb.co/sJ7RhGG/image-41.png)
 
 </div>
 
-## 🕌 FTAudit Ecosystem 
+## 🕌 HKT-SmartAudit Ecosystem 
 <div align="center">
   <img src="./images/FTAudit.png" alt="FTAudit Ecosystem" height="250">
 </div>
