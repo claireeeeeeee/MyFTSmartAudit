@@ -14,7 +14,7 @@
 ## Core Idea: Teacher-Student Distiallation
 
 <div align="center">
-  <img src="./images/teacherStudentModel.png" alt="teacherStudent Methodology" height="250">
+  <img src="./images/distillation.png" alt="teacherStudent Methodology" height="250">
 </div>
 
 ## 🕌 HKT-SmartAudit Ecosystem 
