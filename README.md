@@ -36,6 +36,7 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 
 | Model List | Base Model |Free Notebooks | Model Source | 
 |-----------|---------|---------|--------|
+|**HKT-DeepSeek-R1-8b|DeepSeek-R1-Distill-Llama-8B|-| [⬇Download](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)|
 |**HKT-Llama-3.1 (8b)**| Meta-Llama-3.1-8B-Instruct-bnb-4bit|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.1) |
 |**HKT-Gemma-2 (9b)** | gemma-2-9b-bnb-4bit|-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.1)|
 |**HKT-Mistral-Nemo (12b)**| Mistral-Nemo-Instruct-2407-bnb-4bit |-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.1)|
