@@ -36,10 +36,12 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 
 | Model List | Base Model |Free Notebooks | Model Source | 
 |-----------|---------|---------|--------|
-|**HKT-DeepSeek-R1 (8b)**|DeepSeek-R1-Distill-Llama-8B|-| [⬇Download](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B)|
-|**HKT-Llama-3.1 (8b)**| Meta-Llama-3.1-8B-Instruct-bnb-4bit|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.1) |
-|**HKT-Gemma-2 (9b)** | gemma-2-9b-bnb-4bit|-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.1)|
-|**HKT-Mistral-Nemo (12b)**| Mistral-Nemo-Instruct-2407-bnb-4bit |-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.1)|
+|**HKT-DeepSeek-R1 (8b)**|DeepSeek-R1-Distill-Llama-8B|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)|
+|**HKT-Llama-3.1 (8b)**| Meta-Llama-3.1-8B-Instruct-bnb-4bit|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.2) |
+|**HKT-Gemma-2 (9b)** | gemma-2-9b-bnb-4bit|-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.2)|
+|**HKT-Mistral-Nemo (12b)**| Mistral-Nemo-Instruct-2407-bnb-4bit[Source](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct) |-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.2)|
+|**HKT-Qwen-2.5-coder (7b)**| Qwen/Qwen2.5-Coder-7B-Instruct[Source](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-qwen2.5-coder-7b-it-v0.1) |
+|**HKT-Llama-3.2 (1b)**| Llama-3.2-1B-Instruct-bnb-4bit|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama-3_2-1b-it-v0.1) |
 | **FTAudit-Llama3 (8B)**      | Meta-Llama-3-8B-Instruct-bnb-4bit | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
 | **FTAudit-Mistral (7B)**    | mistral-7b-instruct-v0.3-bnb-4bit |[▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
 | **FTAudit-Gemma (7B)**      | gemma-1.1-7b-it-bnb-4bit |[▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
