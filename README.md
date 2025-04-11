@@ -66,22 +66,22 @@ We rigorously evaluated our models across three distinct datasets. All evaluatio
 
 ### 1. Standard Vulnerability Set
 <div align="center">
-  <img src="https://via.placeholder.com/600x200?text=Standard+Vulnerability+Evaluation" alt="Standard Set" height="150">
+  <img src="./images/model_accuracy_comparison.png " alt="Standard Set" height="150">
 </div>
 
 - **Dataset**: SmartBugs-curated [[1]](#) (143 contracts, 182 DASP-classified vulnerabilities)
 - **Scope**: 10 common vulnerability types
-- **Evaluation Results**: [`evaluation1`](https://huggingface.co/weifar/evaluation1)  
+- **Evaluation Results**: [`evaluation`](https://huggingface.co/weifar/evaluation1)  
   → Precision/Recall metrics, confusion matrices, per-vulnerability breakdown
 
 ### 2. Real-World Projects Set
 <div align="center">
-  <img src="https://via.placeholder.com/600x200?text=Real-World+Projects+Evaluation" alt="Real-World Set" height="150">
+  <img src="./images/top_accuracy_standard.png" alt="Real-World Set" height="150">
 </div>
 
 - **Dataset**: Code4rena-audited [[13]](#) (6,454 contracts from 72 projects)
 - **Key Stats**: 243 issue contracts, 784 high/medium severity findings
-- **Evaluation Results**: [`evaluation2`](https://huggingface.co/weifar/evaluation2)  
+- **Evaluation Results**: [`evaluation`](https://huggingface.co/weifar/evaluation2)  
   → False-positive analysis, complexity-scaling tests, gas optimization impact
 
 ### 3. CVE Benchmark Set
