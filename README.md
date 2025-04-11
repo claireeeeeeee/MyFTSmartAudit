@@ -36,7 +36,7 @@ All notebooks are **beginner-friendly**! Simply add your smart contract dataset,
 
 ### 🌟 Featured Models
 
-| Model List | Base Model |Free Notebooks | Model Source | 
+| Model List | Base Model | Notebooks | Model Source | 
 |-----------|---------|---------|--------|
 |**HKT-DeepSeek-R1 (8b)**|DeepSeek-R1-Distill-Llama-8B|-| [🤗 Download](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)|
 |**HKT-Llama-3.1 (8b)**| Meta-Llama-3.1-8B-Instruct-bnb-4bit|-| [🤗Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.2) |
@@ -60,7 +60,40 @@ All notebooks are **beginner-friendly**! Simply add your smart contract dataset,
 - 🆕 **New Release!** Adapting our method to smaller models: [HKT-vul-llama-3_2-1b](https://huggingface.co/weifar/HKT-vul-llama-3_2-1b-it-v0.1)
 - 🆕 **New Experiment!** Testing with reasoning models: [HKT-vul-DeepSeek-R1-8b](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)
 
+## 📊 Experimental Datasets & Results
 
+We rigorously evaluated our models across three distinct datasets. All evaluation metrics, reports, and detailed analyses are available in their respective repositories:
+
+### 1. Standard Vulnerability Set
+<div align="center">
+  <img src="https://via.placeholder.com/600x200?text=Standard+Vulnerability+Evaluation" alt="Standard Set" height="150">
+</div>
+
+- **Dataset**: SmartBugs-curated [[1]](#) (143 contracts, 182 DASP-classified vulnerabilities)
+- **Scope**: 10 common vulnerability types
+- **Evaluation Results**: [`evaluation1`](https://huggingface.co/weifar/evaluation1)  
+  → Precision/Recall metrics, confusion matrices, per-vulnerability breakdown
+
+### 2. Real-World Projects Set
+<div align="center">
+  <img src="https://via.placeholder.com/600x200?text=Real-World+Projects+Evaluation" alt="Real-World Set" height="150">
+</div>
+
+- **Dataset**: Code4rena-audited [[13]](#) (6,454 contracts from 72 projects)
+- **Key Stats**: 243 issue contracts, 784 high/medium severity findings
+- **Evaluation Results**: [`evaluation2`](https://huggingface.co/weifar/evaluation2)  
+  → False-positive analysis, complexity-scaling tests, gas optimization impact
+
+### 3. CVE Benchmark Set
+<div align="center">
+  <img src="https://via.placeholder.com/600x200?text=CVE+Benchmark+Evaluation" alt="CVE Set" height="150">
+</div>
+
+- **Coverage**: 13 critical CVEs (Jan 2025 snapshot)
+- **Categories**: 
+  ```python
+  ["Integer Overflow", "Access Control", "Logic Bugs", "Other Critical"]
+  
 ## 🔗 Links and Resources
 | Type                            | Links                               |
 | ------------------------------- | --------------------------------------- |
