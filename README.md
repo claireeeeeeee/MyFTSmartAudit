@@ -7,11 +7,11 @@
 
 # Distilling Lightweight Specialized Models for Smart Contract Auditing!
 
-![](https://i.ibb.co/sJ7RhGG/image-41.png)
+![Banner](https://i.ibb.co/sJ7RhGG/image-41.png)
 
 </div>
 
-## Core Idea: Teacher-Student Distillation
+## 🎯 Core Idea: Teacher-Student Distillation
 
 <div align="center">
   <img src="./images/distillation.png" alt="teacherStudent Methodology" height="400">
@@ -22,34 +22,33 @@
   <img src="./images/FTAudit.png" alt="FTAudit Ecosystem" height="250">
 </div>
 
-Our Ecosystem aims to provide a comprehensive solution for smart contract auditing. It includes:
+Our ecosystem provides a comprehensive solution for smart contract auditing with:
 
-- A set of specialized models
-- A user-friendly interface
-- A powerful backend to support the entire auditing process
+- 🛠️ A suite of specialized models for different audit needs
+- 💻 User-friendly interfaces for seamless interaction
+- ⚡ Powerful backend infrastructure for efficient processing
 
 By leveraging these specialized models, our Ecosystem helps users quickly and accurately identify potential vulnerabilities in their smart contracts, providing valuable insights and recommendations for improvement.
 
-## ✨ Run Specialized Models
+## 🚀 Run Specialized Models
 
-All notebooks are **beginner friendly**! Add your smart contract dataset, click "Run All", and you'll get a auditing report. Use can use our colab scripts or your local devices.
+All notebooks are **beginner-friendly**! Simply add your smart contract dataset, click "Run All", and receive a detailed audit report. Available for both Colab and local execution.
+
+### 🌟 Featured Models
 
 | Model List | Base Model |Free Notebooks | Model Source | 
 |-----------|---------|---------|--------|
-|**HKT-DeepSeek-R1 (8b)**|DeepSeek-R1-Distill-Llama-8B|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)|
-|**HKT-Llama-3.1 (8b)**| Meta-Llama-3.1-8B-Instruct-bnb-4bit|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.2) |
-|**HKT-Gemma-2 (9b)** | gemma-2-9b-bnb-4bit|-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.2)|
-|**HKT-Mistral-Nemo (12b)**| Mistral-Nemo-Instruct-2407-bnb-4bit[Source](https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct) |-|[⬇Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.2)|
-|**HKT-Qwen-2.5-coder (7b)**| Qwen/Qwen2.5-Coder-7B-Instruct[Source](https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct)|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-qwen2.5-coder-7b-it-v0.1) |
-|**HKT-Llama-3.2 (1b)**| Llama-3.2-1B-Instruct-bnb-4bit|-| [⬇Download](https://huggingface.co/weifar/HKT-vul-llama-3_2-1b-it-v0.1) |
-| **FTAudit-Llama3 (8B)**      | Meta-Llama-3-8B-Instruct-bnb-4bit | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
-| **FTAudit-Mistral (7B)**    | mistral-7b-instruct-v0.3-bnb-4bit |[▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
-| **FTAudit-Gemma (7B)**      | gemma-1.1-7b-it-bnb-4bit |[▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
-| **FTAudit-Codegemma (7B)**     | codegemma-1.1-7b-it-bnb-4bit | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-CodeGemma-7b-v0.4) | 
+|**HKT-DeepSeek-R1 (8b)**|DeepSeek-R1-Distill-Llama-8B|-| [🤗 Download](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)|
+|**HKT-Llama-3.1 (8b)**| Meta-Llama-3.1-8B-Instruct-bnb-4bit|-| [🤗Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.2) |
+|**HKT-Gemma-2 (9b)** | gemma-2-9b-bnb-4bit|-|[🤗 Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.2)|
+|**HKT-Mistral-Nemo (12b)**| Mistral-Nemo-Instruct-2407-bnb-4bit |-|[🤗 Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.2)|
+|**HKT-Qwen-2.5-coder (7b)**| Qwen/Qwen2.5-Coder-7B-Instruct|-| [🤗 Download](https://huggingface.co/weifar/HKT-vul-qwen2.5-coder-7b-it-v0.1) |
+|**HKT-Llama-3.2 (1b)**| Llama-3.2-1B-Instruct-bnb-4bit|-| [🤗 Download](https://huggingface.co/weifar/HKT-vul-llama-3_2-1b-it-v0.1) |
+| **FTAudit-Llama3 (8B)**      | Meta-Llama-3-8B-Instruct-bnb-4bit | [▶️ Colab](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [🤗 Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
+| **FTAudit-Mistral (7B)**    | mistral-7b-instruct-v0.3-bnb-4bit |[▶️ Colab](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [🤗 Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
+| **FTAudit-Gemma (7B)**      | gemma-1.1-7b-it-bnb-4bit |[▶️ Colab](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[🤗 Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
 
-
-
-### In our early research, we also fine-tune other models:
+### 🔍 Earlier Research Models
 
 | Model List | Model Source |  
 |-----------|---------|
@@ -58,13 +57,8 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 |FTAudit-Llama2 (7B)|[⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-7b)|
 
 ## 🦙 FTAudit.ai News
-- 🍀 NEW! [FTAudit_qwen2_7b](https://huggingface.co/weifar/FTAudit_qwen2_7b_v1) now supported, which fine-tune qwen2 7b model
-- 🍀 NEW! [FTAudit_phi_3.5_mini](https://huggingface.co/weifar/FTAudit_phi_3_5_mini_v1) now supported, which fine-tune phi 3.5 mini model
-- 🍀 NEW! [FTAudit_mistral_nemo_2407](https://huggingface.co/weifar/FTAudit_mistral_nemo_2407_it_v1) now supported, which fine-tune mistral_nemo_2407
-- 🍀 NEW! [FTAudit-llama3.1-8b](https://huggingface.co/weifar/FTAudit_llama3_1-8b_v1) now supported, which fine-tune llama3.1-8b
-- 🍀 NEW! [FTAudit-Gemma-2-9b](https://huggingface.co/weifar/FTAudit-gemma2-9b-mix-v0.1) now supported, which fine-tune gemma2-9b
-- 🐥 UPDATE! [FTAudit-Codegemma](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing) model updated
-
+- 🆕 **New Release!** Adapting our method to smaller models: [HKT-vul-llama-3_2-1b](https://huggingface.co/weifar/HKT-vul-llama-3_2-1b-it-v0.1)
+- 🆕 **New Experiment!** Testing with reasoning models: [HKT-vul-DeepSeek-R1-8b](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)
 
 
 ## 🔗 Links and Resources
