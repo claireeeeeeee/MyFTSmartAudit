@@ -71,17 +71,17 @@ We rigorously evaluated our models across three distinct datasets. All evaluatio
 
 - **Dataset**: SmartBugs-curated [[1]](#) (143 contracts, 182 DASP-classified vulnerabilities)
 - **Scope**: 10 common vulnerability types
-- **Evaluation Results**: [`evaluation`](https://huggingface.co/weifar/evaluation1)  
+- **Evaluation Results**: [`evaluation`](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports/DetectableReports)  
   → Precision/Recall metrics, confusion matrices, per-vulnerability breakdown
 
 ### 2. Real-World Projects Set
 <div align="center">
-  <img src="./images/top_accuracy_standard.png" alt="Real-World Set" height="150">
+  <img src="./images/top_accuracy_realworld.png" alt="Real-World Set" height="150">
 </div>
 
 - **Dataset**: Code4rena-audited [[13]](#) (6,454 contracts from 72 projects)
 - **Key Stats**: 243 issue contracts, 784 high/medium severity findings
-- **Evaluation Results**: [`evaluation`](https://huggingface.co/weifar/evaluation2)  
+- **Evaluation Results**: [`evaluation`](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports/ContestReports)  
   → False-positive analysis, complexity-scaling tests, gas optimization impact
 
 ### 3. CVE Benchmark Set
