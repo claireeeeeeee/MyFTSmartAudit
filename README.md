@@ -66,7 +66,7 @@ We rigorously evaluated our models across three distinct datasets. All evaluatio
 
 ### 1. Standard Vulnerability Set
 <div align="center">
-  <img src="./images/model_accuracy_comparison.png " alt="Standard Set" height="150">
+  <img src="./images/model_accuracy_comparison.png " alt="Standard Set" height="250">
 </div>
 
 - **Dataset**: SmartBugs-curated [[1]](#) (143 contracts, 182 DASP-classified vulnerabilities)
@@ -76,7 +76,7 @@ We rigorously evaluated our models across three distinct datasets. All evaluatio
 
 ### 2. Real-World Projects Set
 <div align="center">
-  <img src="./images/top_accuracy_realworld.png" alt="Real-World Set" height="150">
+  <img src="./images/top_accuracy_realworld.png" alt="Real-World Set" height="250">
 </div>
 
 - **Dataset**: Code4rena-audited [[13]](#) (6,454 contracts from 72 projects)
