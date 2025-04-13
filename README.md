@@ -1,50 +1,54 @@
 <div align="center">
 
   <a href="https://huggingface.co/weifar"><picture>
-    <img src="./images/log_FTAudit.png" height=150>
+    <img src="./images/logo_smartaudit.jpeg" height=150>
       </picture></a>
 
 
-# Specialized Models for Smart Contract Auditing!
+# Distilling Lightweight Specialized Models for Smart Contract Auditing!
 
-![](https://i.ibb.co/sJ7RhGG/image-41.png)
+![Banner](https://i.ibb.co/sJ7RhGG/image-41.png)
 
 </div>
 
-## 🕌 FTAudit Ecosystem 
+## 🎯 Core Idea: Teacher-Student Distillation
+
+<div align="center">
+  <img src="./images/distillation.png" alt="teacherStudent Methodology" height="400">
+</div>
+
+## 🕌 HKT-SmartAudit Ecosystem 
 <div align="center">
   <img src="./images/FTAudit.png" alt="FTAudit Ecosystem" height="250">
 </div>
 
-Our Ecosystem aims to provide a comprehensive solution for smart contract auditing. It includes:
+Our ecosystem provides a comprehensive solution for smart contract auditing with:
 
-- A set of specialized models
-- A user-friendly interface
-- A powerful backend to support the entire auditing process
+- 🛠️ A suite of specialized models for different audit needs
+- 💻 User-friendly interfaces for seamless interaction
+- ⚡ Powerful backend infrastructure for efficient processing
 
 By leveraging these specialized models, our Ecosystem helps users quickly and accurately identify potential vulnerabilities in their smart contracts, providing valuable insights and recommendations for improvement.
 
-## ✨ Run Specialized Models
+## 🚀 Run Specialized Models
 
-All notebooks are **beginner friendly**! Add your smart contract dataset, click "Run All", and you'll get a auditing report. Use can use our colab scripts or your local devices.
+All notebooks are **beginner-friendly**! Simply add your smart contract dataset, click "Run All", and receive a detailed audit report. Available for both Colab and local execution.
 
-| Model List | Free Notebooks | Model Source | 
-|-----------|---------|--------|
-| **FTAudit-Llama3 (8B)**      | [▶️ Start for free](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
-| **FTAudit-Mistral (7B)**    | [▶️ Start for free](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [⬇Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
-| **FTAudit-Gemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
-| **FTAudit-Codegemma (7B)**      | [▶️ Start for free](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[⬇Download](https://huggingface.co/weifar/FTAudit-CodeGemma-7b-v0.4) | 
+### 🌟 Featured Models
 
-### We also fine-tuning other kinds of models for smart contract auditing.
-| Model List | Model Source |  
-|-----------|---------|
-| **FTAudit-Vuln-Llama3 (8B)**   | [⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Llama3-8b-v0.3) |
-|**FTAudit-Vuln-Mistral (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Mistral-7B-v0.3)|
-|**FTAudit-Vuln-Gemma (7B)**|[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Gemma-7B-v0.3)|
-|**FTAudit-Codegemma (7B)** |[⬇Download](https://huggingface.co/weifar/FTAudit-Vuln-Codegemma-7b)|
+| Model List | Base Model | Notebooks | Model Source | 
+|-----------|---------|---------|--------|
+|**HKT-DeepSeek-R1 (8b)**|DeepSeek-R1-Distill-Llama-8B|-| [🤗 Download](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)|
+|**HKT-Llama-3.1 (8b)**| Meta-Llama-3.1-8B-Instruct-bnb-4bit|-| [🤗Download](https://huggingface.co/weifar/HKT-vul-llama3_1-8b-it-v0.2) |
+|**HKT-Gemma-2 (9b)** | gemma-2-9b-bnb-4bit|-|[🤗 Download](https://huggingface.co/weifar/HKT-vul-Gemma-2-9b-it-v0.2)|
+|**HKT-Mistral-Nemo (12b)**| Mistral-Nemo-Instruct-2407-bnb-4bit |-|[🤗 Download](https://huggingface.co/weifar/HKT-vul-Mistral-Nemo-it-v0.2)|
+|**HKT-Qwen-2.5-coder (7b)**| Qwen/Qwen2.5-Coder-7B-Instruct|-| [🤗 Download](https://huggingface.co/weifar/HKT-vul-qwen2.5-coder-7b-it-v0.1) |
+|**HKT-Llama-3.2 (1b)**| Llama-3.2-1B-Instruct-bnb-4bit|-| [🤗 Download](https://huggingface.co/weifar/HKT-vul-llama-3_2-1b-it-v0.1) |
+| **FTAudit-Llama3 (8B)**      | Meta-Llama-3-8B-Instruct-bnb-4bit | [▶️ Colab](https://colab.research.google.com/drive/1Y_SHymcZGr98832GTSF46J1_JHtHgYhy?usp=sharing)               | [🤗 Download](https://huggingface.co/weifar/FTAudit-Llama3-8b-v1.0) | 
+| **FTAudit-Mistral (7B)**    | mistral-7b-instruct-v0.3-bnb-4bit |[▶️ Colab](https://colab.research.google.com/drive/11MYFl14fvdVtEHqKxFXDSMY_L80PzWA7?usp=sharing)               | [🤗 Download](https://huggingface.co/weifar/FTAudit-Mistral-7b-v1.1) | 
+| **FTAudit-Gemma (7B)**      | gemma-1.1-7b-it-bnb-4bit |[▶️ Colab](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing)               |[🤗 Download](https://huggingface.co/weifar/FTAudit-Gemma-7b-v1.0) | 
 
-
-### In our early research, we also fine-tune other models:
+### 🔍 Earlier Research Models
 
 | Model List | Model Source |  
 |-----------|---------|
@@ -53,11 +57,43 @@ All notebooks are **beginner friendly**! Add your smart contract dataset, click 
 |FTAudit-Llama2 (7B)|[⬇Download](https://huggingface.co/weifar/FTAudit-Llama3-7b)|
 
 ## 🦙 FTAudit.ai News
-- 🍀 NEW! [FTAudit-Gemma-2-9b](https://huggingface.co/weifar/FTAudit-gemma2-9b-mix-v0.1) now supported
-- 🐥 UPDATE! [FTAudit-Codegemma](https://colab.research.google.com/drive/18qzvkx__LwX6DPik3U5HBb61kwvaxWHO?usp=sharing) model updated
+- 🆕 **New Release!** Adapting our method to smaller models: [HKT-vul-llama-3_2-1b](https://huggingface.co/weifar/HKT-vul-llama-3_2-1b-it-v0.1)
+- 🆕 **New Experiment!** Testing with reasoning models: [HKT-vul-DeepSeek-R1-8b](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)
 
+## 📊 Experimental Datasets & Results
 
+We rigorously evaluated our models across three distinct datasets. All evaluation metrics, reports, and detailed analyses are available in their respective repositories:
 
+### 1. Standard Vulnerability Set
+<div align="center">
+  <img src="./images/model_accuracy_comparison.png " alt="Standard Set" height="250">
+</div>
+
+- **Dataset**: SmartBugs-curated [[1]](#) (143 contracts, 182 DASP-classified vulnerabilities)
+- **Scope**: 10 common vulnerability types
+- **Evaluation Results**: [`evaluation`](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports/DetectableReports)  
+  → Precision/Recall metrics, confusion matrices, per-vulnerability breakdown
+
+### 2. Real-World Projects Set
+<div align="center">
+  <img src="./images/top_accuracy_realworld.png" alt="Real-World Set" height="250">
+</div>
+
+- **Dataset**: Code4rena-audited [[13]](#) (6,454 contracts from 72 projects)
+- **Key Stats**: 243 issue contracts, 784 high/medium severity findings
+- **Evaluation Results**: [`evaluation`](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports/ContestReports)  
+  → False-positive analysis, complexity-scaling tests, gas optimization impact
+
+### 3. CVE Benchmark Set
+<div align="center">
+  <img src="https://via.placeholder.com/600x200?text=CVE+Benchmark+Evaluation" alt="CVE Set" height="150">
+</div>
+
+- **Coverage**: 13 critical CVEs (Jan 2025 snapshot)
+- **Categories**: 
+  ```python
+  ["Integer Overflow", "Access Control", "Logic Bugs", "Other Critical"]
+  
 ## 🔗 Links and Resources
 | Type                            | Links                               |
 | ------------------------------- | --------------------------------------- |
@@ -333,3 +369,15 @@ Unprotected `setParams()` Function: The `setParams()` function of USDV.sol contr
 ### 😘 Thank You to
 - [Unsloth AI](https://unsloth.ai) for providing the Faster Interface Plan, accelerating our evaluations.
 
+## Citation
+Feel free to cite us if you like ToolBench.
+```bibtex
+@misc{wei2024ftaudit,
+      title={Leveraging Fine-Tuned Language Models for Efficient and Accurate Smart Contract Auditing}, 
+      author={Zhiyuan Wei, Jing Sun, Zijian Zhang, Xianhao Zhang, Meng Li},
+      year={2024},
+      eprint={2410.13918},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI}
+}
+```
