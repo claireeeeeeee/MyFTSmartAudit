@@ -71,7 +71,7 @@ We rigorously evaluated our models across three distinct datasets. All evaluatio
 
 - **Dataset**: SmartBugs-curated [[1]](#) (143 contracts, 182 DASP-classified vulnerabilities)
 - **Scope**: 10 common vulnerability types
-- **Evaluation Results**: [`evaluation`](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports/DetectableReports)  
+- **Evaluation Results**: [`evaluation`](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports/standardContract)  
   → Precision/Recall metrics, confusion matrices, per-vulnerability breakdown
 
 ### 2. Real-World Projects Set
