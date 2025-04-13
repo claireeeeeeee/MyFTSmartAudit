@@ -82,7 +82,7 @@ We rigorously evaluated our models across three distinct datasets. All evaluatio
 - **Dataset**: Code4rena-audited [[13]](#) (6,454 contracts from 72 projects)
 - **Key Stats**: 243 issue contracts, 784 high/medium severity findings
 - **Evaluation Results**: [`evaluation`](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/EvaluationReports/ContestReports)  
-  → False-positive analysis, complexity-scaling tests, gas optimization impact
+  → Rank-optimization analysis, complexity-scaling tests, gas optimization impact
 
 ### 3. CVE Benchmark Set
 <div align="center">
