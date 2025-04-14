@@ -1,4 +1,4 @@
-API_KEY = "sk-"
+API_KEY = ""
 INPUT_TYPES = ["Payment Contracts"]
 TYPE_DESCRIPTIONS = [
     "Facilitates fund transfers based on conditions."
