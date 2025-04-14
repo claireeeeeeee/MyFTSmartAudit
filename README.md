@@ -60,6 +60,10 @@ All notebooks are **beginner-friendly**! Simply add your smart contract dataset,
 - 🆕 **New Release!** Adapting our method to smaller models: [HKT-vul-llama-3_2-1b](https://huggingface.co/weifar/HKT-vul-llama-3_2-1b-it-v0.1)
 - 🆕 **New Experiment!** Testing with reasoning models: [HKT-vul-DeepSeek-R1-8b](https://huggingface.co/weifar/HKT-vul-DeepSeek-R1-8b-it-v0.2)
 
+## Teacher-Student Distillation
+
+We have developed an automatic approach to distill knowledge: [Distillation](https://github.com/LLMSmartAudit/FTSmartAudit/tree/main/model_distillation)
+
 ## 📊 Experimental Datasets & Results
 
 We rigorously evaluated our models across three distinct datasets. All evaluation metrics, reports, and detailed analyses are available in their respective repositories:
