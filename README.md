@@ -372,16 +372,3 @@ Unprotected `setParams()` Function: The `setParams()` function of USDV.sol contr
 
 ### 😘 Thank You to
 - [Unsloth AI](https://unsloth.ai) for providing the Faster Interface Plan, accelerating our evaluations.
-
-## Citation
-Feel free to cite us if you like ToolBench.
-```bibtex
-@misc{wei2024ftaudit,
-      title={Leveraging Fine-Tuned Language Models for Efficient and Accurate Smart Contract Auditing}, 
-      author={Zhiyuan Wei, Jing Sun, Zijian Zhang, Xianhao Zhang, Meng Li},
-      year={2024},
-      eprint={2410.13918},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI}
-}
-```
