@@ -3,7 +3,7 @@ from config.settings import API_KEY, INPUT_TYPES, TYPE_DESCRIPTIONS, TEMPERATURE
 
 if __name__ == "__main__":
     process_seeds_csv(
-        csv_path="./data/sample_seed_knowledge_v2.csv",
+        csv_path="/Users/cli776/Documents/FTSmartAudit/model_distillation/data/sample_seed_knowledge_v2.csv",
         api_key=API_KEY,
         input_types=INPUT_TYPES,
         type_descriptions=TYPE_DESCRIPTIONS,
