@@ -1,0 +1,1834 @@
+Name,Seed,input_code,output_md,smell_seed_info,temperature,input_type,type_description,model,tokens
+Pizza.py,"### Input:
+""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+class Pizza:
+    def __init__(self, size: str, dough_type: str, topping: str):
+        self.size = size
+        self.dough_type = dough_type
+        self.topping = topping
+        self.extra_cheese = False
+        self.customer_first_name = None
+        self.customer_last_name = None
+        self.customer_address = None
+        self.customer_phone_number = None
+        self.customer_email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+
+    def set_size(self, size: str):
+        self.size = size
+
+    def set_dough_type(self, dough_type: str):
+        self.dough_type = dough_type
+
+    def set_topping(self, topping: str):
+        self.topping = topping
+
+    def update_customer_info(self, first_name, last_name, address, phone_number, email):
+        self.customer_first_name = first_name
+        self.customer_last_name = last_name
+        self.customer_address = address
+        self.customer_phone_number = phone_number
+        self.customer_email = email
+
+    def update_customer_name(self, first_name, last_name):
+        self.customer_first_name = first_name
+        self.customer_last_name = last_name
+
+    def update_customer_address(self, address):
+        self.customer_address = address
+
+    def update_customer_phone_number(self, phone_number):
+        self.customer_phone_number = phone_number
+
+    def update_customer_email(self, email):
+        self.customer_email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self):
+        print(""Applying discount for customer"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            print(""Handling complaint: Pizza is cold"")
+        elif complaint == ""late delivery"":
+            print(""Handling complaint: Pizza is late"")
+        elif complaint == ""wrong order"":
+            print(""Handling complaint: Wrong pizza delivered"")
+        else:
+            print(""Handling complaint: General complaint"")
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def long_method(self):
+        print(""Pizza is handling many tasks in a single method"")
+        self.set_size(""Large"")
+        self.set_dough_type(""Thin Crust"")
+        self.set_topping(""Pepperoni"")
+        self.update_customer_info(""John"", ""Doe"", ""123 Street"", ""555-5555"", ""john.doe@example.com"")
+        self.notify_for_promotion()
+        self.notify_for_discount()
+        self.notify_for_new_arrivals()
+        self.apply_discount()
+        self.apply_loyalty_points()
+        self.handle_complaint(""cold pizza"")
+
+    def order_with_unnecessary_details(self, pizza_type, size, crust_type, toppings, extra_cheese, discount_code):
+        print(f""Placing a detailed order for {pizza_type} pizza with {size}, {crust_type}, {toppings}, extra cheese: {extra_cheese}, discount code: {discount_code}"")
+        self.set_size(size)
+        self.set_dough_type(crust_type)
+        self.set_topping(toppings)
+        self.apply_discount()
+
+    def duplicate_method(self):
+        print(""Customer is making a duplicate order"")
+        self.set_topping(""Cheese"")
+        self.set_topping(""Cheese"")
+
+    def chain_of_methods(self):
+        print(""Pizza is initiating a message chain"")
+        self.update_customer_address(""123 Street"")
+
+    def middleman_method(self):
+        print(""Pizza is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details: {self.size}, {self.dough_type}, {self.topping}"")
+
+    def refused_bequest(self):
+        pass
+
+
+class CheesePizza(Pizza):
+    def __init__(self):
+        super().__init__(""Medium"", ""Regular"", ""Cheese"")
+        self.cheese_type = ""Mozzarella""
+
+    def handle_complaint(self, complaint):
+        if complaint == ""too much cheese"":
+            print(""Handling complaint: Too much cheese"")
+        else:
+            super().handle_complaint(complaint)
+
+
+class VeggiePizza(Pizza):
+    def __init__(self):
+        super().__init__(""Medium"", ""Whole Wheat"", ""Veggies"")
+
+
+class TunaPizza(Pizza):
+    def __init__(self):
+        super().__init__(""Large"", ""Thin Crust"", ""Tuna"")
+
+
+class PepperoniPizza(Pizza):
+    def __init__(self):
+        super().__init__(""Large"", ""Regular"", ""Pepperoni"")
+
+
+### Response:
+| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class mixes pizza properties, customer management, complaints, and discounts, violating SRP | Python_Pizza_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `extra_cheese` instead of a more expressive construct | Python_Pizza___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped customer details (`customer_first_name`, `customer_last_name`, `customer_address`, etc.) that should be encapsulated | Python_Pizza___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`pizza_type`, `size`, `crust_type`, etc.) | Python_Pizza_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Pizza_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Pizza___init___Temporary Field |
+| 7 | Change Preventers | Shotgun Surgery | update_customer_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Pizza_update_customer_info_Shotgun Surgery |
+| 8 | Change Preventers | Shotgun Surgery | update_customer_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Pizza_update_customer_name_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_customer_address | Similar to `update_customer_name`, updates should be encapsulated | Python_Pizza_update_customer_address_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_customer_phone_number | Separate field update that contributes to shotgun surgery | Python_Pizza_update_customer_phone_number_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_customer_email | Separate field update that contributes to shotgun surgery | Python_Pizza_update_customer_email_Shotgun Surgery |
+| 12 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Pizza_notify_for_promotion_Divergent Change |
+| 13 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Pizza_notify_for_discount_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Pizza_notify_for_new_arrivals_Divergent Change |
+| 15 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Pizza_apply_discount_Parallel Inheritance Hierarchies |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Pizza_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 17 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Pizza_ask_for_receipt_Speculative Generality |
+| 18 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Pizza_another_unused_method_Dead Code |
+| 19 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Pizza_yet_another_unused_method_Dead Code |
+| 20 | Dispensables | Duplicate Code | duplicate_method | Repeated functionality with identical operations on the same attribute | Python_Pizza_duplicate_method_Duplicate Code |
+| 21 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.update_customer_address(""123 Street"")`) | Python_Pizza_chain_of_methods_Message Chains |
+| 22 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Pizza_middleman_method_Middle Man |
+| 23 | Couplers | Inappropriate Intimacy | access_internal_details | Accesses internal attributes (`self.size`, `self.dough_type`, `self.topping`) | Python_Pizza_access_internal_details_Inappropriate Intimacy |
+| 24 | Bloaters | Long Method | long_method | Performs multiple actions in a single method, reducing readability | Python_Pizza_long_method_Long Method |
+","""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+class Pizza:
+    def __init__(self, size: str, dough_type: str, topping: str):
+        self.size = size
+        self.dough_type = dough_type
+        self.topping = topping
+        self.extra_cheese = False
+        self.customer_first_name = None
+        self.customer_last_name = None
+        self.customer_address = None
+        self.customer_phone_number = None
+        self.customer_email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+
+    def set_size(self, size: str):
+        self.size = size
+
+    def set_dough_type(self, dough_type: str):
+        self.dough_type = dough_type
+
+    def set_topping(self, topping: str):
+        self.topping = topping
+
+    def update_customer_info(self, first_name, last_name, address, phone_number, email):
+        self.customer_first_name = first_name
+        self.customer_last_name = last_name
+        self.customer_address = address
+        self.customer_phone_number = phone_number
+        self.customer_email = email
+
+    def update_customer_name(self, first_name, last_name):
+        self.customer_first_name = first_name
+        self.customer_last_name = last_name
+
+    def update_customer_address(self, address):
+        self.customer_address = address
+
+    def update_customer_phone_number(self, phone_number):
+        self.customer_phone_number = phone_number
+
+    def update_customer_email(self, email):
+        self.customer_email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self):
+        print(""Applying discount for customer"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            print(""Handling complaint: Pizza is cold"")
+        elif complaint == ""late delivery"":
+            print(""Handling complaint: Pizza is late"")
+        elif complaint == ""wrong order"":
+            print(""Handling complaint: Wrong pizza delivered"")
+        else:
+            print(""Handling complaint: General complaint"")
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def long_method(self):
+        print(""Pizza is handling many tasks in a single method"")
+        self.set_size(""Large"")
+        self.set_dough_type(""Thin Crust"")
+        self.set_topping(""Pepperoni"")
+        self.update_customer_info(""John"", ""Doe"", ""123 Street"", ""555-5555"", ""john.doe@example.com"")
+        self.notify_for_promotion()
+        self.notify_for_discount()
+        self.notify_for_new_arrivals()
+        self.apply_discount()
+        self.apply_loyalty_points()
+        self.handle_complaint(""cold pizza"")
+
+    def order_with_unnecessary_details(self, pizza_type, size, crust_type, toppings, extra_cheese, discount_code):
+        print(f""Placing a detailed order for {pizza_type} pizza with {size}, {crust_type}, {toppings}, extra cheese: {extra_cheese}, discount code: {discount_code}"")
+        self.set_size(size)
+        self.set_dough_type(crust_type)
+        self.set_topping(toppings)
+        self.apply_discount()
+
+    def duplicate_method(self):
+        print(""Customer is making a duplicate order"")
+        self.set_topping(""Cheese"")
+        self.set_topping(""Cheese"")
+
+    def chain_of_methods(self):
+        print(""Pizza is initiating a message chain"")
+        self.update_customer_address(""123 Street"")
+
+    def middleman_method(self):
+        print(""Pizza is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details: {self.size}, {self.dough_type}, {self.topping}"")
+
+    def refused_bequest(self):
+        pass
+
+
+class CheesePizza(Pizza):
+    def __init__(self):
+        super().__init__(""Medium"", ""Regular"", ""Cheese"")
+        self.cheese_type = ""Mozzarella""
+
+    def handle_complaint(self, complaint):
+        if complaint == ""too much cheese"":
+            print(""Handling complaint: Too much cheese"")
+        else:
+            super().handle_complaint(complaint)
+
+
+class VeggiePizza(Pizza):
+    def __init__(self):
+        super().__init__(""Medium"", ""Whole Wheat"", ""Veggies"")
+
+
+class TunaPizza(Pizza):
+    def __init__(self):
+        super().__init__(""Large"", ""Thin Crust"", ""Tuna"")
+
+
+class PepperoniPizza(Pizza):
+    def __init__(self):
+        super().__init__(""Large"", ""Regular"", ""Pepperoni"")
+","| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class mixes pizza properties, customer management, complaints, and discounts, violating SRP | Python_Pizza_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `extra_cheese` instead of a more expressive construct | Python_Pizza___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped customer details (`customer_first_name`, `customer_last_name`, `customer_address`, etc.) that should be encapsulated | Python_Pizza___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`pizza_type`, `size`, `crust_type`, etc.) | Python_Pizza_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Pizza_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Pizza___init___Temporary Field |
+| 7 | Change Preventers | Shotgun Surgery | update_customer_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Pizza_update_customer_info_Shotgun Surgery |
+| 8 | Change Preventers | Shotgun Surgery | update_customer_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Pizza_update_customer_name_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_customer_address | Similar to `update_customer_name`, updates should be encapsulated | Python_Pizza_update_customer_address_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_customer_phone_number | Separate field update that contributes to shotgun surgery | Python_Pizza_update_customer_phone_number_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_customer_email | Separate field update that contributes to shotgun surgery | Python_Pizza_update_customer_email_Shotgun Surgery |
+| 12 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Pizza_notify_for_promotion_Divergent Change |
+| 13 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Pizza_notify_for_discount_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Pizza_notify_for_new_arrivals_Divergent Change |
+| 15 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Pizza_apply_discount_Parallel Inheritance Hierarchies |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Pizza_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 17 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Pizza_ask_for_receipt_Speculative Generality |
+| 18 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Pizza_another_unused_method_Dead Code |
+| 19 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Pizza_yet_another_unused_method_Dead Code |
+| 20 | Dispensables | Duplicate Code | duplicate_method | Repeated functionality with identical operations on the same attribute | Python_Pizza_duplicate_method_Duplicate Code |
+| 21 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.update_customer_address(""123 Street"")`) | Python_Pizza_chain_of_methods_Message Chains |
+| 22 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Pizza_middleman_method_Middle Man |
+| 23 | Couplers | Inappropriate Intimacy | access_internal_details | Accesses internal attributes (`self.size`, `self.dough_type`, `self.topping`) | Python_Pizza_access_internal_details_Inappropriate Intimacy |
+| 24 | Bloaters | Long Method | long_method | Performs multiple actions in a single method, reducing readability | Python_Pizza_long_method_Long Method |
+",,,,,,406
+Drink.py,"### Input:
+""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+class Drink:
+    def __init__(self):
+        self.drink_type = None
+
+    def create_order(self, drink_type):
+        self.drink_type = drink_type
+        print(f""Creating order for {drink_type} drink."")
+
+    def add_to_order(self):
+        print(f""Adding {self.drink_type} to the order."")
+
+    def confirm_order(self):
+        print(f""Order for {self.drink_type} confirmed."")
+
+
+### Response:
+| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Dispensables | Data Class | Entire Class | Class only stores data (`drink_type`) without meaningful behavior | Python_Drink_Entire Class_Data Class |
+| 2 | Bloaters | Primitive Obsession | create_order | Uses a primitive (`string`) instead of a more expressive object for drink type | Python_Drink_create_order_Primitive Obsession |
+| 3 | Bloaters | Primitive Obsession | add_to_order | Uses a primitive (`string`) instead of an object for order processing | Python_Drink_add_to_order_Primitive Obsession |
+| 4 | Bloaters | Primitive Obsession | confirm_order | Uses a primitive (`string`) instead of an object for order confirmation | Python_Drink_confirm_order_Primitive Obsession |
+","""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+class Drink:
+    def __init__(self):
+        self.drink_type = None
+
+    def create_order(self, drink_type):
+        self.drink_type = drink_type
+        print(f""Creating order for {drink_type} drink."")
+
+    def add_to_order(self):
+        print(f""Adding {self.drink_type} to the order."")
+
+    def confirm_order(self):
+        print(f""Order for {self.drink_type} confirmed."")
+","| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Dispensables | Data Class | Entire Class | Class only stores data (`drink_type`) without meaningful behavior | Python_Drink_Entire Class_Data Class |
+| 2 | Bloaters | Primitive Obsession | create_order | Uses a primitive (`string`) instead of a more expressive object for drink type | Python_Drink_create_order_Primitive Obsession |
+| 3 | Bloaters | Primitive Obsession | add_to_order | Uses a primitive (`string`) instead of an object for order processing | Python_Drink_add_to_order_Primitive Obsession |
+| 4 | Bloaters | Primitive Obsession | confirm_order | Uses a primitive (`string`) instead of an object for order confirmation | Python_Drink_confirm_order_Primitive Obsession |
+",,,,,,76
+Cashier.py,"### Input:
+""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+from Pizza import Pizza
+
+class Cashier:
+    def __init__(self, chef):
+        self.chef = chef
+        self.frequent_customer_discount = False
+        self.first_name = None
+        self.last_name = None
+        self.address = None
+        self.phone_number = None
+        self.email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+
+    def take_order(self, pizza_type: str):
+        print(f""Cashier is taking order for {pizza_type} pizza."")
+        self.chef.bake_pizza(pizza_type)
+
+    def hurry_up_chef(self):
+        print(""Cashier is hurrying up the chef."")
+        self.chef.hurry_up()
+
+    def calm_customer_down(self):
+        print(""Cashier is calming the customer down."")
+        self.chef.clean_kitchen()
+
+    def deliver_pizza_to_customer(self):
+        print(""Cashier is delivering pizza to the customer."")
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def long_method(self):
+        print(""Cashier is handling many tasks in a single method"")
+        self.take_order(""Cheese"")
+        self.hurry_up_chef()
+        self.calm_customer_down()
+        self.deliver_pizza_to_customer()
+        self.ask_for_receipt()
+
+    def order_with_unnecessary_details(self, pizza_type, size, crust_type, toppings, extra_cheese, discount_code):
+        print(f""Placing a detailed order for {pizza_type} pizza with {size}, {crust_type}, {toppings}, extra cheese: {extra_cheese}, discount code: {discount_code}"")
+        self.take_order(pizza_type)
+        self.apply_discount(discount_code)
+        self.deliver_pizza_to_customer()
+
+    def duplicate_method(self):
+        print(""Customer is making a duplicate order"")
+        self.take_order(""Cheese"")
+        self.take_order(""Cheese"")
+
+    def chain_of_methods(self):
+        print(""Cashier is initiating a message chain"")
+        self.chef.clean_kitchen()
+
+    def middleman_method(self):
+        print(""Cashier is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details: {self.chef.busy}"")
+
+    def update_contact_info(self, first_name, last_name, address, phone_number, email):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.phone_number = phone_number
+        self.email = email
+
+    def update_name(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def update_address(self, address):
+        self.address = address
+
+    def update_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def update_email(self, email):
+        self.email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self, discount_code):
+        print(f""Applying discount for customer with code {discount_code}"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            self.calm_customer_down()
+        elif complaint == ""late delivery"":
+            self.calm_customer_down()
+        elif complaint == ""wrong order"":
+            self.calm_customer_down()
+        else:
+            self.calm_customer_down()
+
+    def refused_bequest(self):
+        pass
+
+
+### Response:
+| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class handles multiple responsibilities: order taking, complaints, discounts, customer contact, and deliveries | Python_Cashier_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `frequent_customer_discount` instead of a more expressive construct | Python_Cashier___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped customer details (`first_name`, `last_name`, `address`, `phone_number`, `email`) should be encapsulated | Python_Cashier___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`pizza_type`, `size`, `crust_type`, etc.) | Python_Cashier_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Cashier_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Cashier___init___Temporary Field |
+| 7 | Object-Orientation Abusers | Refused Bequest | refused_bequest | Method is meant for inheritance but is empty | Python_Cashier_refused_bequest_Refused Bequest |
+| 8 | Change Preventers | Shotgun Surgery | update_contact_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Cashier_update_contact_info_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Cashier_update_name_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_address | Similar to `update_name`, updates should be encapsulated | Python_Cashier_update_address_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_phone_number | Separate field update that contributes to shotgun surgery | Python_Cashier_update_phone_number_Shotgun Surgery |
+| 12 | Change Preventers | Shotgun Surgery | update_email | Separate field update that contributes to shotgun surgery | Python_Cashier_update_email_Shotgun Surgery |
+| 13 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Cashier_notify_for_promotion_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Cashier_notify_for_discount_Divergent Change |
+| 15 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Cashier_notify_for_new_arrivals_Divergent Change |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Cashier_apply_discount_Parallel Inheritance Hierarchies |
+| 17 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Cashier_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 18 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Cashier_ask_for_receipt_Speculative Generality |
+| 19 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Cashier_another_unused_method_Dead Code |
+| 20 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Cashier_yet_another_unused_method_Dead Code |
+| 21 | Dispensables | Duplicate Code | duplicate_method | Repeated functionality with identical operations on the same attribute | Python_Cashier_duplicate_method_Duplicate Code |
+| 22 | Couplers | Feature Envy | take_order | Excessive reliance on another class (`chef`) for core functionality | Python_Cashier_take_order_Feature Envy |
+| 23 | Couplers | Inappropriate Intimacy | calm_customer_down | Accessing internal methods of `chef` (`clean_kitchen()`) | Python_Cashier_calm_customer_down_Inappropriate Intimacy |
+| 24 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.chef.clean_kitchen()`) | Python_Cashier_chain_of_methods_Message Chains |
+| 25 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Cashier_middleman_method_Middle Man |
+| 26 | Bloaters | Long Method | long_method | Performs multiple actions in a single method, reducing readability | Python_Cashier_long_method_Long Method |
+","""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+from Pizza import Pizza
+
+class Cashier:
+    def __init__(self, chef):
+        self.chef = chef
+        self.frequent_customer_discount = False
+        self.first_name = None
+        self.last_name = None
+        self.address = None
+        self.phone_number = None
+        self.email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+
+    def take_order(self, pizza_type: str):
+        print(f""Cashier is taking order for {pizza_type} pizza."")
+        self.chef.bake_pizza(pizza_type)
+
+    def hurry_up_chef(self):
+        print(""Cashier is hurrying up the chef."")
+        self.chef.hurry_up()
+
+    def calm_customer_down(self):
+        print(""Cashier is calming the customer down."")
+        self.chef.clean_kitchen()
+
+    def deliver_pizza_to_customer(self):
+        print(""Cashier is delivering pizza to the customer."")
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def long_method(self):
+        print(""Cashier is handling many tasks in a single method"")
+        self.take_order(""Cheese"")
+        self.hurry_up_chef()
+        self.calm_customer_down()
+        self.deliver_pizza_to_customer()
+        self.ask_for_receipt()
+
+    def order_with_unnecessary_details(self, pizza_type, size, crust_type, toppings, extra_cheese, discount_code):
+        print(f""Placing a detailed order for {pizza_type} pizza with {size}, {crust_type}, {toppings}, extra cheese: {extra_cheese}, discount code: {discount_code}"")
+        self.take_order(pizza_type)
+        self.apply_discount(discount_code)
+        self.deliver_pizza_to_customer()
+
+    def duplicate_method(self):
+        print(""Customer is making a duplicate order"")
+        self.take_order(""Cheese"")
+        self.take_order(""Cheese"")
+
+    def chain_of_methods(self):
+        print(""Cashier is initiating a message chain"")
+        self.chef.clean_kitchen()
+
+    def middleman_method(self):
+        print(""Cashier is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details: {self.chef.busy}"")
+
+    def update_contact_info(self, first_name, last_name, address, phone_number, email):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.phone_number = phone_number
+        self.email = email
+
+    def update_name(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def update_address(self, address):
+        self.address = address
+
+    def update_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def update_email(self, email):
+        self.email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self, discount_code):
+        print(f""Applying discount for customer with code {discount_code}"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            self.calm_customer_down()
+        elif complaint == ""late delivery"":
+            self.calm_customer_down()
+        elif complaint == ""wrong order"":
+            self.calm_customer_down()
+        else:
+            self.calm_customer_down()
+
+    def refused_bequest(self):
+        pass
+","| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class handles multiple responsibilities: order taking, complaints, discounts, customer contact, and deliveries | Python_Cashier_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `frequent_customer_discount` instead of a more expressive construct | Python_Cashier___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped customer details (`first_name`, `last_name`, `address`, `phone_number`, `email`) should be encapsulated | Python_Cashier___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`pizza_type`, `size`, `crust_type`, etc.) | Python_Cashier_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Cashier_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Cashier___init___Temporary Field |
+| 7 | Object-Orientation Abusers | Refused Bequest | refused_bequest | Method is meant for inheritance but is empty | Python_Cashier_refused_bequest_Refused Bequest |
+| 8 | Change Preventers | Shotgun Surgery | update_contact_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Cashier_update_contact_info_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Cashier_update_name_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_address | Similar to `update_name`, updates should be encapsulated | Python_Cashier_update_address_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_phone_number | Separate field update that contributes to shotgun surgery | Python_Cashier_update_phone_number_Shotgun Surgery |
+| 12 | Change Preventers | Shotgun Surgery | update_email | Separate field update that contributes to shotgun surgery | Python_Cashier_update_email_Shotgun Surgery |
+| 13 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Cashier_notify_for_promotion_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Cashier_notify_for_discount_Divergent Change |
+| 15 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Cashier_notify_for_new_arrivals_Divergent Change |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Cashier_apply_discount_Parallel Inheritance Hierarchies |
+| 17 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Cashier_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 18 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Cashier_ask_for_receipt_Speculative Generality |
+| 19 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Cashier_another_unused_method_Dead Code |
+| 20 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Cashier_yet_another_unused_method_Dead Code |
+| 21 | Dispensables | Duplicate Code | duplicate_method | Repeated functionality with identical operations on the same attribute | Python_Cashier_duplicate_method_Duplicate Code |
+| 22 | Couplers | Feature Envy | take_order | Excessive reliance on another class (`chef`) for core functionality | Python_Cashier_take_order_Feature Envy |
+| 23 | Couplers | Inappropriate Intimacy | calm_customer_down | Accessing internal methods of `chef` (`clean_kitchen()`) | Python_Cashier_calm_customer_down_Inappropriate Intimacy |
+| 24 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.chef.clean_kitchen()`) | Python_Cashier_chain_of_methods_Message Chains |
+| 25 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Cashier_middleman_method_Middle Man |
+| 26 | Bloaters | Long Method | long_method | Performs multiple actions in a single method, reducing readability | Python_Cashier_long_method_Long Method |
+",,,,,,341
+Customer.py,"### Input:
+""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+from Drink import Drink
+
+class Customer:
+    def __init__(self, pizza_shop):
+        self.pizza_shop = pizza_shop
+        self.frequent_customer_discount = False
+        self.first_name = None
+        self.last_name = None
+        self.address = None
+        self.phone_number = None
+        self.email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+        self.drink_order = Drink()
+
+    def order_pizza(self, pizza_type: str):
+        print(f""Customer is placing an order for {pizza_type} pizza."")
+        self.pizza_shop.receive_order(pizza_type)
+
+    def complain(self, complaint: str):
+        print(f""Customer is complaining: {complaint}"")
+        self.pizza_shop.casher.calm_customer_down()
+        self.pizza_shop.casher.chef.clean_kitchen()
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def long_complaint_method(self):
+        print(""Customer is complaining about many things"")
+        self.complain(""Pizza is cold"")
+        self.complain(""Pizza is late"")
+        self.complain(""Wrong pizza delivered"")
+        self.complain(""Pizza is burnt"")
+        self.complain(""Too little cheese"")
+        self.complain(""Pizza is undercooked"")
+        self.ask_for_receipt()
+
+    def order_with_unnecessary_details(self):
+        print(""Customer is placing a detailed order"")
+        self.order_pizza(""Veggie"", ""Large"", ""Whole Wheat"", ""Veggies"", False, True, False, False, ""Olives"", ""Mushrooms"", ""Pesto"", ""Thick"", False, False, True, True, True, False, False, False)
+
+    def duplicate_complaint(self):
+        print(""Customer is complaining about duplicate issues"")
+        self.complain(""Pizza is cold"")
+        self.complain(""Pizza is cold"")
+        self.complain(""Pizza is late"")
+        self.complain(""Pizza is late"")
+
+    def chain_of_methods(self):
+        print(""Customer is initiating a message chain"")
+        self.pizza_shop.casher.chef.clean_kitchen()
+
+    def middleman_method(self):
+        print(""Customer is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details of PizzaShop: {self.pizza_shop.casher.chef.busy}"")
+
+    def update_contact_info(self, first_name, last_name, address, phone_number, email):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.phone_number = phone_number
+        self.email = email
+
+    def update_name(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def update_address(self, address):
+        self.address = address
+
+    def update_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def update_email(self, email):
+        self.email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self):
+        print(""Applying discount for customer"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            self.complain(""Pizza is cold"")
+        elif complaint == ""late delivery"":
+            self.complain(""Pizza is late"")
+        elif complaint == ""wrong order"":
+            self.complain(""Wrong pizza delivered"")
+        else:
+            self.complain(""General complaint"")
+
+    def refused_bequest(self):
+        pass
+
+    def order_drink(self, drink_type: str):
+        print(f""Customer is ordering a {drink_type} drink."")
+        self.drink_order.create_order(drink_type)
+        print(""Adding the drink order to the current order."")
+        self.drink_order.add_to_order()
+        print(""Confirming the drink order."")
+        self.drink_order.confirm_order()
+
+
+### Response:
+| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class handles multiple responsibilities: ordering, complaints, contact updates, notifications, and discounts | Python_Customer_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `frequent_customer_discount` instead of a more expressive construct | Python_Customer___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped customer details (`first_name`, `last_name`, `address`, `phone_number`, `email`) should be encapsulated | Python_Customer___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`pizza_type`, `size`, `crust_type`, etc.) | Python_Customer_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Customer_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Customer___init___Temporary Field |
+| 7 | Object-Orientation Abusers | Refused Bequest | refused_bequest | Method is meant for inheritance but is empty | Python_Customer_refused_bequest_Refused Bequest |
+| 8 | Change Preventers | Shotgun Surgery | update_contact_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Customer_update_contact_info_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Customer_update_name_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_address | Similar to `update_name`, updates should be encapsulated | Python_Customer_update_address_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_phone_number | Separate field update that contributes to shotgun surgery | Python_Customer_update_phone_number_Shotgun Surgery |
+| 12 | Change Preventers | Shotgun Surgery | update_email | Separate field update that contributes to shotgun surgery | Python_Customer_update_email_Shotgun Surgery |
+| 13 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Customer_notify_for_promotion_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Customer_notify_for_discount_Divergent Change |
+| 15 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Customer_notify_for_new_arrivals_Divergent Change |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Customer_apply_discount_Parallel Inheritance Hierarchies |
+| 17 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Customer_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 18 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Customer_ask_for_receipt_Speculative Generality |
+| 19 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Customer_another_unused_method_Dead Code |
+| 20 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Customer_yet_another_unused_method_Dead Code |
+| 21 | Dispensables | Duplicate Code | duplicate_complaint | Repeated functionality with identical operations on the same attribute | Python_Customer_duplicate_complaint_Duplicate Code |
+| 22 | Couplers | Feature Envy | order_pizza | Excessive reliance on another class (`pizza_shop`) for core functionality | Python_Customer_order_pizza_Feature Envy |
+| 23 | Couplers | Inappropriate Intimacy | complain | Accessing another object's internal details (`self.pizza_shop.casher.chef.clean_kitchen()`) | Python_Customer_complain_Inappropriate Intimacy |
+| 24 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.pizza_shop.casher.chef.clean_kitchen()`) | Python_Customer_chain_of_methods_Message Chains |
+| 25 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Customer_middleman_method_Middle Man |
+| 26 | Bloaters | Long Method | long_complaint_method | Performs multiple actions in a single method, reducing readability | Python_Customer_long_complaint_method_Long Method |
+| 27 | Dispensables | Unnecessary Comments | order_drink | Over-commenting explaining self-explanatory steps | Python_Customer_order_drink_Unnecessary Comments |
+","""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+from Drink import Drink
+
+class Customer:
+    def __init__(self, pizza_shop):
+        self.pizza_shop = pizza_shop
+        self.frequent_customer_discount = False
+        self.first_name = None
+        self.last_name = None
+        self.address = None
+        self.phone_number = None
+        self.email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+        self.drink_order = Drink()
+
+    def order_pizza(self, pizza_type: str):
+        print(f""Customer is placing an order for {pizza_type} pizza."")
+        self.pizza_shop.receive_order(pizza_type)
+
+    def complain(self, complaint: str):
+        print(f""Customer is complaining: {complaint}"")
+        self.pizza_shop.casher.calm_customer_down()
+        self.pizza_shop.casher.chef.clean_kitchen()
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def long_complaint_method(self):
+        print(""Customer is complaining about many things"")
+        self.complain(""Pizza is cold"")
+        self.complain(""Pizza is late"")
+        self.complain(""Wrong pizza delivered"")
+        self.complain(""Pizza is burnt"")
+        self.complain(""Too little cheese"")
+        self.complain(""Pizza is undercooked"")
+        self.ask_for_receipt()
+
+    def order_with_unnecessary_details(self):
+        print(""Customer is placing a detailed order"")
+        self.order_pizza(""Veggie"", ""Large"", ""Whole Wheat"", ""Veggies"", False, True, False, False, ""Olives"", ""Mushrooms"", ""Pesto"", ""Thick"", False, False, True, True, True, False, False, False)
+
+    def duplicate_complaint(self):
+        print(""Customer is complaining about duplicate issues"")
+        self.complain(""Pizza is cold"")
+        self.complain(""Pizza is cold"")
+        self.complain(""Pizza is late"")
+        self.complain(""Pizza is late"")
+
+    def chain_of_methods(self):
+        print(""Customer is initiating a message chain"")
+        self.pizza_shop.casher.chef.clean_kitchen()
+
+    def middleman_method(self):
+        print(""Customer is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details of PizzaShop: {self.pizza_shop.casher.chef.busy}"")
+
+    def update_contact_info(self, first_name, last_name, address, phone_number, email):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.phone_number = phone_number
+        self.email = email
+
+    def update_name(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def update_address(self, address):
+        self.address = address
+
+    def update_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def update_email(self, email):
+        self.email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self):
+        print(""Applying discount for customer"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            self.complain(""Pizza is cold"")
+        elif complaint == ""late delivery"":
+            self.complain(""Pizza is late"")
+        elif complaint == ""wrong order"":
+            self.complain(""Wrong pizza delivered"")
+        else:
+            self.complain(""General complaint"")
+
+    def refused_bequest(self):
+        pass
+
+    def order_drink(self, drink_type: str):
+        print(f""Customer is ordering a {drink_type} drink."")
+        self.drink_order.create_order(drink_type)
+        print(""Adding the drink order to the current order."")
+        self.drink_order.add_to_order()
+        print(""Confirming the drink order."")
+        self.drink_order.confirm_order()
+","| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class handles multiple responsibilities: ordering, complaints, contact updates, notifications, and discounts | Python_Customer_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `frequent_customer_discount` instead of a more expressive construct | Python_Customer___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped customer details (`first_name`, `last_name`, `address`, `phone_number`, `email`) should be encapsulated | Python_Customer___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`pizza_type`, `size`, `crust_type`, etc.) | Python_Customer_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Customer_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Customer___init___Temporary Field |
+| 7 | Object-Orientation Abusers | Refused Bequest | refused_bequest | Method is meant for inheritance but is empty | Python_Customer_refused_bequest_Refused Bequest |
+| 8 | Change Preventers | Shotgun Surgery | update_contact_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Customer_update_contact_info_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Customer_update_name_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_address | Similar to `update_name`, updates should be encapsulated | Python_Customer_update_address_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_phone_number | Separate field update that contributes to shotgun surgery | Python_Customer_update_phone_number_Shotgun Surgery |
+| 12 | Change Preventers | Shotgun Surgery | update_email | Separate field update that contributes to shotgun surgery | Python_Customer_update_email_Shotgun Surgery |
+| 13 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Customer_notify_for_promotion_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Customer_notify_for_discount_Divergent Change |
+| 15 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Customer_notify_for_new_arrivals_Divergent Change |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Customer_apply_discount_Parallel Inheritance Hierarchies |
+| 17 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Customer_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 18 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Customer_ask_for_receipt_Speculative Generality |
+| 19 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Customer_another_unused_method_Dead Code |
+| 20 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Customer_yet_another_unused_method_Dead Code |
+| 21 | Dispensables | Duplicate Code | duplicate_complaint | Repeated functionality with identical operations on the same attribute | Python_Customer_duplicate_complaint_Duplicate Code |
+| 22 | Couplers | Feature Envy | order_pizza | Excessive reliance on another class (`pizza_shop`) for core functionality | Python_Customer_order_pizza_Feature Envy |
+| 23 | Couplers | Inappropriate Intimacy | complain | Accessing another object's internal details (`self.pizza_shop.casher.chef.clean_kitchen()`) | Python_Customer_complain_Inappropriate Intimacy |
+| 24 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.pizza_shop.casher.chef.clean_kitchen()`) | Python_Customer_chain_of_methods_Message Chains |
+| 25 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Customer_middleman_method_Middle Man |
+| 26 | Bloaters | Long Method | long_complaint_method | Performs multiple actions in a single method, reducing readability | Python_Customer_long_complaint_method_Long Method |
+| 27 | Dispensables | Unnecessary Comments | order_drink | Over-commenting explaining self-explanatory steps | Python_Customer_order_drink_Unnecessary Comments |
+",,,,,,380
+Main.py,"### Input:
+""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+import time
+from Shop import Shop
+from Customer import Customer
+
+def measure_execution_time(runs=10):
+    total_time = 0
+    for _ in range(runs):
+        start_time = time.time()
+
+        shop = Shop()
+        customer = Customer(shop)
+        customer.order_pizza(""Cheese"")
+        customer.complain(""The pizza is too cold."")
+
+        end_time = time.time()
+        execution_time = end_time - start_time
+        total_time += execution_time
+
+    average_time = total_time / runs
+    return average_time
+
+if __name__ == ""__main__"":
+    avg_time = measure_execution_time()
+    print(f""Average execution time over multiple runs: {avg_time} seconds"")
+
+
+### Response:
+","""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+import time
+from Shop import Shop
+from Customer import Customer
+
+def measure_execution_time(runs=10):
+    total_time = 0
+    for _ in range(runs):
+        start_time = time.time()
+
+        shop = Shop()
+        customer = Customer(shop)
+        customer.order_pizza(""Cheese"")
+        customer.complain(""The pizza is too cold."")
+
+        end_time = time.time()
+        execution_time = end_time - start_time
+        total_time += execution_time
+
+    average_time = total_time / runs
+    return average_time
+
+if __name__ == ""__main__"":
+    avg_time = measure_execution_time()
+    print(f""Average execution time over multiple runs: {avg_time} seconds"")
+",,,,,,,112
+Chef.py,"### Input:
+""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+from Pizza import Pizza
+
+class Chef:
+    def __init__(self):
+        self.pizza = None
+        self.busy = False
+        self.completed_orders = 0
+        self.breaks_taken = 0
+        self.kitchen_clean = True
+        self.frequent_customer_discount = False
+        self.first_name = None
+        self.last_name = None
+        self.address = None
+        self.phone_number = None
+        self.email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+
+    def bake_pizza(self, pizza_type: str):
+        print(f""Chef is baking {pizza_type} pizza."")
+        self.pizza = Pizza(""Unknown"", ""Unknown"", pizza_type)
+        self.cut_pizza_and_put_in_box()
+
+    def cut_pizza_and_put_in_box(self):
+        print(f""Chef is cutting the {self.pizza.topping} pizza and putting it in a box."")
+        self.deliver_pizza()
+
+    def deliver_pizza(self):
+        print(""Chef is delivering the pizza to the cashier."")
+
+    def hurry_up(self):
+        print(""Chef is hurrying up."")
+
+    def clean_kitchen(self):
+        print(""Chef is cleaning the kitchen."")
+        self.kitchen_clean = True
+
+    def update_contact_info(self, first_name, last_name, address, phone_number, email):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.phone_number = phone_number
+        self.email = email
+
+    def update_name(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def update_address(self, address):
+        self.address = address
+
+    def update_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def update_email(self, email):
+        self.email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self):
+        print(""Applying discount for customer"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            self.clean_kitchen()
+        elif complaint == ""late delivery"":
+            self.clean_kitchen()
+        elif complaint == ""wrong order"":
+            self.clean_kitchen()
+        else:
+            self.clean_kitchen()
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def long_method(self):
+        print(""Chef is handling many tasks in a single method"")
+        self.bake_pizza(""Cheese"")
+        self.cut_pizza_and_put_in_box()
+        self.deliver_pizza()
+        self.hurry_up()
+        self.clean_kitchen()
+        self.update_contact_info(""John"", ""Doe"", ""123 Street"", ""555-5555"", ""john.doe@example.com"")
+        self.notify_for_promotion()
+        self.notify_for_discount()
+        self.notify_for_new_arrivals()
+        self.apply_discount()
+        self.apply_loyalty_points()
+        self.handle_complaint(""cold pizza"")
+
+    def order_with_unnecessary_details(self, pizza_type, size, crust_type, toppings, extra_cheese, discount_code):
+        print(f""Placing a detailed order for {pizza_type} pizza with {size}, {crust_type}, {toppings}, extra cheese: {extra_cheese}, discount code: {discount_code}"")
+        self.bake_pizza(pizza_type)
+        self.apply_discount(discount_code)
+        self.deliver_pizza()
+
+    def duplicate_method(self):
+        print(""Customer is making a duplicate order"")
+        self.bake_pizza(""Cheese"")
+        self.bake_pizza(""Cheese"")
+
+    def chain_of_methods(self):
+        print(""Chef is initiating a message chain"")
+        self.clean_kitchen()
+
+    def middleman_method(self):
+        print(""Chef is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details: {self.pizza}"")
+
+    def refused_bequest(self):
+        pass
+
+
+### Response:
+| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class handles multiple responsibilities: baking, delivering, cleaning, notifications, complaints, and discounts | Python_Chef_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `frequent_customer_discount` instead of a more expressive construct | Python_Chef___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped chef details (`first_name`, `last_name`, `address`, `phone_number`, `email`) should be encapsulated | Python_Chef___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`pizza_type`, `size`, `crust_type`, etc.) | Python_Chef_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Chef_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Chef___init___Temporary Field |
+| 7 | Object-Orientation Abusers | Refused Bequest | refused_bequest | Method is meant for inheritance but is empty | Python_Chef_refused_bequest_Refused Bequest |
+| 8 | Change Preventers | Shotgun Surgery | update_contact_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Chef_update_contact_info_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Chef_update_name_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_address | Similar to `update_name`, updates should be encapsulated | Python_Chef_update_address_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_phone_number | Separate field update that contributes to shotgun surgery | Python_Chef_update_phone_number_Shotgun Surgery |
+| 12 | Change Preventers | Shotgun Surgery | update_email | Separate field update that contributes to shotgun surgery | Python_Chef_update_email_Shotgun Surgery |
+| 13 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Chef_notify_for_promotion_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Chef_notify_for_discount_Divergent Change |
+| 15 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Chef_notify_for_new_arrivals_Divergent Change |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Chef_apply_discount_Parallel Inheritance Hierarchies |
+| 17 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Chef_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 18 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Chef_ask_for_receipt_Speculative Generality |
+| 19 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Chef_another_unused_method_Dead Code |
+| 20 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Chef_yet_another_unused_method_Dead Code |
+| 21 | Dispensables | Duplicate Code | duplicate_method | Repeated functionality with identical operations on the same attribute | Python_Chef_duplicate_method_Duplicate Code |
+| 22 | Couplers | Inappropriate Intimacy | access_internal_details | Accesses internal details of the `Pizza` object directly | Python_Chef_access_internal_details_Inappropriate Intimacy |
+| 23 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.clean_kitchen()`) | Python_Chef_chain_of_methods_Message Chains |
+| 24 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Chef_middleman_method_Middle Man |
+| 25 | Bloaters | Long Method | long_method | Performs multiple actions in a single method, reducing readability | Python_Chef_long_method_Long Method |
+","""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+from Pizza import Pizza
+
+class Chef:
+    def __init__(self):
+        self.pizza = None
+        self.busy = False
+        self.completed_orders = 0
+        self.breaks_taken = 0
+        self.kitchen_clean = True
+        self.frequent_customer_discount = False
+        self.first_name = None
+        self.last_name = None
+        self.address = None
+        self.phone_number = None
+        self.email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+
+    def bake_pizza(self, pizza_type: str):
+        print(f""Chef is baking {pizza_type} pizza."")
+        self.pizza = Pizza(""Unknown"", ""Unknown"", pizza_type)
+        self.cut_pizza_and_put_in_box()
+
+    def cut_pizza_and_put_in_box(self):
+        print(f""Chef is cutting the {self.pizza.topping} pizza and putting it in a box."")
+        self.deliver_pizza()
+
+    def deliver_pizza(self):
+        print(""Chef is delivering the pizza to the cashier."")
+
+    def hurry_up(self):
+        print(""Chef is hurrying up."")
+
+    def clean_kitchen(self):
+        print(""Chef is cleaning the kitchen."")
+        self.kitchen_clean = True
+
+    def update_contact_info(self, first_name, last_name, address, phone_number, email):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.phone_number = phone_number
+        self.email = email
+
+    def update_name(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def update_address(self, address):
+        self.address = address
+
+    def update_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def update_email(self, email):
+        self.email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self):
+        print(""Applying discount for customer"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            self.clean_kitchen()
+        elif complaint == ""late delivery"":
+            self.clean_kitchen()
+        elif complaint == ""wrong order"":
+            self.clean_kitchen()
+        else:
+            self.clean_kitchen()
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def long_method(self):
+        print(""Chef is handling many tasks in a single method"")
+        self.bake_pizza(""Cheese"")
+        self.cut_pizza_and_put_in_box()
+        self.deliver_pizza()
+        self.hurry_up()
+        self.clean_kitchen()
+        self.update_contact_info(""John"", ""Doe"", ""123 Street"", ""555-5555"", ""john.doe@example.com"")
+        self.notify_for_promotion()
+        self.notify_for_discount()
+        self.notify_for_new_arrivals()
+        self.apply_discount()
+        self.apply_loyalty_points()
+        self.handle_complaint(""cold pizza"")
+
+    def order_with_unnecessary_details(self, pizza_type, size, crust_type, toppings, extra_cheese, discount_code):
+        print(f""Placing a detailed order for {pizza_type} pizza with {size}, {crust_type}, {toppings}, extra cheese: {extra_cheese}, discount code: {discount_code}"")
+        self.bake_pizza(pizza_type)
+        self.apply_discount(discount_code)
+        self.deliver_pizza()
+
+    def duplicate_method(self):
+        print(""Customer is making a duplicate order"")
+        self.bake_pizza(""Cheese"")
+        self.bake_pizza(""Cheese"")
+
+    def chain_of_methods(self):
+        print(""Chef is initiating a message chain"")
+        self.clean_kitchen()
+
+    def middleman_method(self):
+        print(""Chef is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details: {self.pizza}"")
+
+    def refused_bequest(self):
+        pass
+","| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class handles multiple responsibilities: baking, delivering, cleaning, notifications, complaints, and discounts | Python_Chef_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `frequent_customer_discount` instead of a more expressive construct | Python_Chef___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped chef details (`first_name`, `last_name`, `address`, `phone_number`, `email`) should be encapsulated | Python_Chef___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`pizza_type`, `size`, `crust_type`, etc.) | Python_Chef_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Chef_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Chef___init___Temporary Field |
+| 7 | Object-Orientation Abusers | Refused Bequest | refused_bequest | Method is meant for inheritance but is empty | Python_Chef_refused_bequest_Refused Bequest |
+| 8 | Change Preventers | Shotgun Surgery | update_contact_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Chef_update_contact_info_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Chef_update_name_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_address | Similar to `update_name`, updates should be encapsulated | Python_Chef_update_address_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_phone_number | Separate field update that contributes to shotgun surgery | Python_Chef_update_phone_number_Shotgun Surgery |
+| 12 | Change Preventers | Shotgun Surgery | update_email | Separate field update that contributes to shotgun surgery | Python_Chef_update_email_Shotgun Surgery |
+| 13 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Chef_notify_for_promotion_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Chef_notify_for_discount_Divergent Change |
+| 15 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Chef_notify_for_new_arrivals_Divergent Change |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Chef_apply_discount_Parallel Inheritance Hierarchies |
+| 17 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Chef_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 18 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Chef_ask_for_receipt_Speculative Generality |
+| 19 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Chef_another_unused_method_Dead Code |
+| 20 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Chef_yet_another_unused_method_Dead Code |
+| 21 | Dispensables | Duplicate Code | duplicate_method | Repeated functionality with identical operations on the same attribute | Python_Chef_duplicate_method_Duplicate Code |
+| 22 | Couplers | Inappropriate Intimacy | access_internal_details | Accesses internal details of the `Pizza` object directly | Python_Chef_access_internal_details_Inappropriate Intimacy |
+| 23 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.clean_kitchen()`) | Python_Chef_chain_of_methods_Message Chains |
+| 24 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Chef_middleman_method_Middle Man |
+| 25 | Bloaters | Long Method | long_method | Performs multiple actions in a single method, reducing readability | Python_Chef_long_method_Long Method |
+",,,,,,378
+Shop.py,"### Input:
+""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+from Cashier import Cashier
+from Chef import Chef
+from Pizza import Pizza, CheesePizza, VeggiePizza, TunaPizza, PepperoniPizza
+
+class Shop:
+    def __init__(self):
+        self.chef = Chef()
+        self.casher = Cashier(self.chef)
+        self.pizza = None
+        self.frequent_customer_discount = False
+        self.first_name = None
+        self.last_name = None
+        self.address = None
+        self.phone_number = None
+        self.email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+
+    def create_pizza(self, pizza_type: str) -> Pizza:
+        if pizza_type == ""Cheese"":
+            return CheesePizza()
+        elif pizza_type == ""Veggie"":
+            return VeggiePizza()
+        elif pizza_type == ""Tuna"":
+            return TunaPizza()
+        elif pizza_type == ""Pepperoni"":
+            return PepperoniPizza()
+        else:
+            raise ValueError(""Unknown pizza type"")
+
+    def receive_order(self, pizza_type: str):
+        print(f""Pizza Shop received order for {pizza_type} pizza."")
+        self.pizza = self.create_pizza(pizza_type)
+        self.casher.take_order(pizza_type)
+
+    def update_contact_info(self, first_name, last_name, address, phone_number, email):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.phone_number = phone_number
+        self.email = email
+
+    def update_name(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def update_address(self, address):
+        self.address = address
+
+    def update_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def update_email(self, email):
+        self.email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self):
+        print(""Applying discount for customer"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            self.casher.calm_customer_down()
+        elif complaint == ""late delivery"":
+            self.casher.calm_customer_down()
+        elif complaint == ""wrong order"":
+            self.casher.calm_customer_down()
+        else:
+            self.casher.calm_customer_down()
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def chain_of_methods(self):
+        print(""Shop is initiating a message chain"")
+        self.casher.chef.clean_kitchen()
+
+    def middleman_method(self):
+        print(""Shop is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details: {self.casher.chef.busy}"")
+
+    def long_method(self):
+        print(""Shop is handling many tasks in a single method"")
+        self.update_contact_info(""John"", ""Doe"", ""123 Street"", ""555-5555"", ""john.doe@example.com"")
+        self.update_name(""John"", ""Doe"")
+        self.update_address(""123 Street"")
+        self.update_phone_number(""555-5555"")
+        self.update_email(""john.doe@example.com"")
+        self.notify_for_promotion()
+        self.notify_for_discount()
+        self.notify_for_new_arrivals()
+        self.apply_discount()
+        self.apply_loyalty_points()
+        self.handle_complaint(""cold pizza"")
+        self.ask_for_receipt()
+        self.chain_of_methods()
+        self.middleman_method()
+        self.access_internal_details()
+
+    def order_with_unnecessary_details(self):
+        print(""Shop is placing a detailed order"")
+        self.receive_order(""Veggie"")
+        self.update_contact_info(""John"", ""Doe"", ""123 Street"", ""555-5555"", ""john.doe@example.com"")
+        self.apply_discount()
+        self.apply_loyalty_points()
+
+
+### Response:
+| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class has too many responsibilities (order processing, notifications, customer management, etc.) | Python_Shop_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `frequent_customer_discount` instead of a more expressive construct | Python_Shop___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped customer details (`first_name`, `last_name`, `address`, `phone_number`, `email`) that should be encapsulated | Python_Shop___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`first_name`, `last_name`, etc.) | Python_Shop_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Shop_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Shop___init___Temporary Field |
+| 7 | Change Preventers | Shotgun Surgery | update_contact_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Shop_update_contact_info_Shotgun Surgery |
+| 8 | Change Preventers | Shotgun Surgery | update_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Shop_update_name_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_address | Similar to `update_name`, updates should be encapsulated | Python_Shop_update_address_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_phone_number | Separate field update that contributes to shotgun surgery | Python_Shop_update_phone_number_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_email | Separate field update that contributes to shotgun surgery | Python_Shop_update_email_Shotgun Surgery |
+| 12 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Shop_notify_for_promotion_Divergent Change |
+| 13 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Shop_notify_for_discount_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Shop_notify_for_new_arrivals_Divergent Change |
+| 15 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Shop_apply_discount_Parallel Inheritance Hierarchies |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Shop_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 17 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Shop_ask_for_receipt_Speculative Generality |
+| 18 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Shop_another_unused_method_Dead Code |
+| 19 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Shop_yet_another_unused_method_Dead Code |
+| 20 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.casher.chef.clean_kitchen()`) | Python_Shop_chain_of_methods_Message Chains |
+| 21 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Shop_middleman_method_Middle Man |
+| 22 | Couplers | Inappropriate Intimacy | access_internal_details | Accesses internal attributes (`self.casher.chef.busy`) | Python_Shop_access_internal_details_Inappropriate Intimacy |
+| 23 | Bloaters | Long Method | long_method | Performs multiple actions in a single method, reducing readability | Python_Shop_long_method_Long Method |
+","""""""
+Copyright (c) 2025 Ahmed R. Sadik, Honda Research Institute Europe GmbH 
+
+This source code is licensed under the MIT License found in the
+LICENSE file in the root directory of this source tree. This dataset contains smelly code for research and refactoring purposes.
+""""""
+
+
+from Cashier import Cashier
+from Chef import Chef
+from Pizza import Pizza, CheesePizza, VeggiePizza, TunaPizza, PepperoniPizza
+
+class Shop:
+    def __init__(self):
+        self.chef = Chef()
+        self.casher = Cashier(self.chef)
+        self.pizza = None
+        self.frequent_customer_discount = False
+        self.first_name = None
+        self.last_name = None
+        self.address = None
+        self.phone_number = None
+        self.email = None
+        self.temp_discount_code = None
+        self.temp_order_note = None
+
+    def create_pizza(self, pizza_type: str) -> Pizza:
+        if pizza_type == ""Cheese"":
+            return CheesePizza()
+        elif pizza_type == ""Veggie"":
+            return VeggiePizza()
+        elif pizza_type == ""Tuna"":
+            return TunaPizza()
+        elif pizza_type == ""Pepperoni"":
+            return PepperoniPizza()
+        else:
+            raise ValueError(""Unknown pizza type"")
+
+    def receive_order(self, pizza_type: str):
+        print(f""Pizza Shop received order for {pizza_type} pizza."")
+        self.pizza = self.create_pizza(pizza_type)
+        self.casher.take_order(pizza_type)
+
+    def update_contact_info(self, first_name, last_name, address, phone_number, email):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.address = address
+        self.phone_number = phone_number
+        self.email = email
+
+    def update_name(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+
+    def update_address(self, address):
+        self.address = address
+
+    def update_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    def update_email(self, email):
+        self.email = email
+
+    def notify_for_promotion(self):
+        print(""Notifying customer for promotion"")
+
+    def notify_for_discount(self):
+        print(""Notifying customer for discount"")
+
+    def notify_for_new_arrivals(self):
+        print(""Notifying customer for new arrivals"")
+
+    def apply_discount(self):
+        print(""Applying discount for customer"")
+
+    def apply_loyalty_points(self):
+        print(""Applying loyalty points for customer"")
+
+    def handle_complaint(self, complaint):
+        if complaint == ""cold pizza"":
+            self.casher.calm_customer_down()
+        elif complaint == ""late delivery"":
+            self.casher.calm_customer_down()
+        elif complaint == ""wrong order"":
+            self.casher.calm_customer_down()
+        else:
+            self.casher.calm_customer_down()
+
+    def ask_for_receipt(self):
+        print(""Customer is asking for a receipt."")
+
+    def another_unused_method(self):
+        pass
+
+    def yet_another_unused_method(self):
+        pass
+
+    def chain_of_methods(self):
+        print(""Shop is initiating a message chain"")
+        self.casher.chef.clean_kitchen()
+
+    def middleman_method(self):
+        print(""Shop is calling a middleman method"")
+        self.middle_method()
+
+    def middle_method(self):
+        print(""Middleman method delegating to another method"")
+        self.real_method()
+
+    def real_method(self):
+        print(""Real method doing the actual work"")
+
+    def access_internal_details(self):
+        print(f""Accessing internal details: {self.casher.chef.busy}"")
+
+    def long_method(self):
+        print(""Shop is handling many tasks in a single method"")
+        self.update_contact_info(""John"", ""Doe"", ""123 Street"", ""555-5555"", ""john.doe@example.com"")
+        self.update_name(""John"", ""Doe"")
+        self.update_address(""123 Street"")
+        self.update_phone_number(""555-5555"")
+        self.update_email(""john.doe@example.com"")
+        self.notify_for_promotion()
+        self.notify_for_discount()
+        self.notify_for_new_arrivals()
+        self.apply_discount()
+        self.apply_loyalty_points()
+        self.handle_complaint(""cold pizza"")
+        self.ask_for_receipt()
+        self.chain_of_methods()
+        self.middleman_method()
+        self.access_internal_details()
+
+    def order_with_unnecessary_details(self):
+        print(""Shop is placing a detailed order"")
+        self.receive_order(""Veggie"")
+        self.update_contact_info(""John"", ""Doe"", ""123 Street"", ""555-5555"", ""john.doe@example.com"")
+        self.apply_discount()
+        self.apply_loyalty_points()
+","| Code Smell # | Category | Code Smell | Method | Type | Identifier |
+|--------------|----------|------------|--------|------|-------------|
+| 1 | Bloaters | Large Class | Entire Class | The class has too many responsibilities (order processing, notifications, customer management, etc.) | Python_Shop_Entire Class_Large Class |
+| 2 | Bloaters | Primitive Obsession | __init__ | Using a primitive (`bool`) for `frequent_customer_discount` instead of a more expressive construct | Python_Shop___init___Primitive Obsession |
+| 3 | Bloaters | Data Clumps | __init__ | Grouped customer details (`first_name`, `last_name`, `address`, `phone_number`, `email`) that should be encapsulated | Python_Shop___init___Data Clumps |
+| 4 | Bloaters | Long Parameter List | order_with_unnecessary_details | Method receives multiple unrelated parameters (`first_name`, `last_name`, etc.) | Python_Shop_order_with_unnecessary_details_Long Parameter List |
+| 5 | Object-Orientation Abusers | Switch Statements | handle_complaint | Overuse of if-else statements to handle different complaints | Python_Shop_handle_complaint_Switch Statements |
+| 6 | Object-Orientation Abusers | Temporary Field | __init__ | Fields (`temp_discount_code`, `temp_order_note`) used only under specific conditions | Python_Shop___init___Temporary Field |
+| 7 | Change Preventers | Shotgun Surgery | update_contact_info | Multiple update methods modifying individual fields instead of a single encapsulated update | Python_Shop_update_contact_info_Shotgun Surgery |
+| 8 | Change Preventers | Shotgun Surgery | update_name | Splitting name updates across different methods instead of a single encapsulated update | Python_Shop_update_name_Shotgun Surgery |
+| 9 | Change Preventers | Shotgun Surgery | update_address | Similar to `update_name`, updates should be encapsulated | Python_Shop_update_address_Shotgun Surgery |
+| 10 | Change Preventers | Shotgun Surgery | update_phone_number | Separate field update that contributes to shotgun surgery | Python_Shop_update_phone_number_Shotgun Surgery |
+| 11 | Change Preventers | Shotgun Surgery | update_email | Separate field update that contributes to shotgun surgery | Python_Shop_update_email_Shotgun Surgery |
+| 12 | Change Preventers | Divergent Change | notify_for_promotion | Multiple notification methods each handling separate concerns | Python_Shop_notify_for_promotion_Divergent Change |
+| 13 | Change Preventers | Divergent Change | notify_for_discount | Related to `notify_for_promotion`, but managed separately | Python_Shop_notify_for_discount_Divergent Change |
+| 14 | Change Preventers | Divergent Change | notify_for_new_arrivals | Another notification method that should be unified | Python_Shop_notify_for_new_arrivals_Divergent Change |
+| 15 | Change Preventers | Parallel Inheritance Hierarchies | apply_discount | Parallel implementation of discount and loyalty points logic | Python_Shop_apply_discount_Parallel Inheritance Hierarchies |
+| 16 | Change Preventers | Parallel Inheritance Hierarchies | apply_loyalty_points | Another parallel logic similar to `apply_discount` | Python_Shop_apply_loyalty_points_Parallel Inheritance Hierarchies |
+| 17 | Dispensables | Speculative Generality | ask_for_receipt | Method is present but never used in any flow | Python_Shop_ask_for_receipt_Speculative Generality |
+| 18 | Dispensables | Dead Code | another_unused_method | Unused method that can be removed | Python_Shop_another_unused_method_Dead Code |
+| 19 | Dispensables | Dead Code | yet_another_unused_method | Another unused method | Python_Shop_yet_another_unused_method_Dead Code |
+| 20 | Couplers | Message Chains | chain_of_methods | Excessive method chaining (`self.casher.chef.clean_kitchen()`) | Python_Shop_chain_of_methods_Message Chains |
+| 21 | Couplers | Middle Man | middleman_method | Delegates work without adding value | Python_Shop_middleman_method_Middle Man |
+| 22 | Couplers | Inappropriate Intimacy | access_internal_details | Accesses internal attributes (`self.casher.chef.busy`) | Python_Shop_access_internal_details_Inappropriate Intimacy |
+| 23 | Bloaters | Long Method | long_method | Performs multiple actions in a single method, reducing readability | Python_Shop_long_method_Long Method |
+",,,,,,359
