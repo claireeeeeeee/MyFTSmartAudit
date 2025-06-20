@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 model_distillation/config/__pycache__/
 model_distillation/config/settings.py
+model_distillation_FTSmartAudit/config/settings.py
+model_distillation_FTSmartAudit/config/__pycache__/git commit -m "chore: remove tracked settings.py and ignore it"
+model_distillation_1/config/__pycache__/
+model_distillation_1/config/settings.py
